@@ -238,17 +238,11 @@ footer img {
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
     }
 
-    footer {
-        background-image: url(../footer2.jpg);
-        padding: 10px; /* Espacio en el footer */
-    }
-
-    footer p {
-        font-size: 12px; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
-    }
-
-    footer img {
-        height: 40px; /* Reduce el tamaño de la imagen del footer */
+   
+        footer img {
+            content: url("../footer2.jpg"); /* Imagen para pantallas pequeñas */
+            height: 40px; /* Ajusta la altura de la imagen para móviles */
+        }
     }
 }
  
