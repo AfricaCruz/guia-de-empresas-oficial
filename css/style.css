@@ -216,3 +216,13 @@ footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
+@media screen and (min-width: 480px) {
+   header{
+    background-image: url("fondo_cabecera.jpg");
+    height: 150px;
+   background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:auto;
+}
+  }
