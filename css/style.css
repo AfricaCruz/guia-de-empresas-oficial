@@ -239,6 +239,7 @@ footer img {
     }
 
     footer {
+        background-image: url(../footer2.jpg);
         padding: 10px; /* Espacio en el footer */
     }
 
