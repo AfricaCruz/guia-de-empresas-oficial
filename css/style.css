@@ -241,7 +241,7 @@ footer img {
    
         footer img {
             content: url("../footer2.jpg"); /* Imagen para pantallas pequeñas */
-            height: 60px; /* Ajusta la altura de la imagen para móviles */
+            height: 55px; /* Ajusta la altura de la imagen para móviles */
         }
     }
 }
