@@ -233,8 +233,13 @@ footer img {
          background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
          background-position: center;  /* Centra la imagen de fondo */
     } 
+    body {
+        background-size: cover;
+        overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+    }
+
     footer {
-        padding: 10px; /* Agrega un poco de espacio en los bordes */
+        padding: 10px; /* Espacio en el footer */
     }
 
     footer p {
@@ -245,4 +250,4 @@ footer img {
         height: 40px; /* Reduce el tamaño de la imagen del footer */
     }
 }
- }
+ 
