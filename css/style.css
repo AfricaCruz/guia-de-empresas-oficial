@@ -225,8 +225,7 @@ footer img {
     background-repeat: no-repeat;
     width:auto;
 }
-  }
-  @media screen and (max-width: 480px){
+  
    body{
        
         margin: 0;
@@ -234,4 +233,4 @@ footer img {
         background-image: url("fondo1.jpg");
         background-size: cover;
     } 
-  }
+}
