@@ -217,20 +217,20 @@ footer img {
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
 @media screen and (max-width: 480px) {
-   header{
-    background-image: url("fondo_cabecera.jpg");
-    height: 150px;
-   background-size:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width:auto;
-}
-  
-   body{
-       
-        margin: 0;
-        padding: 0;
-        background-image: url("fondo1.jpg");
-        background-size: cover;
+    header {
+         background-image: url("fondo_cabecera.jpg");
+         height: 150px;
+         background-size: 100% 100%;  /* Esto asegura que la imagen de fondo se ajuste al contenedor */
+         background-position: center;
+         background-repeat: no-repeat;
+         width: 100%;  /* Se asegura de que el header ocupe todo el ancho disponible */
+    }
+ 
+    body {
+         margin: 0;
+         padding: 0;
+         background-image: url("fondo2.jpg");
+         background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
+         background-position: center;  /* Centra la imagen de fondo */
     } 
-}
+ }
