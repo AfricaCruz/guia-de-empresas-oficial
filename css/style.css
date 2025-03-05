@@ -226,3 +226,12 @@ footer img {
     width:auto;
 }
   }
+  @media screen and (max-width: 480px){
+   body{
+       
+        margin: 0;
+        padding: 0;
+        background-image: url('fondo1.jpg');
+        background-size: cover;
+    } 
+  }
