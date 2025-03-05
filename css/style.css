@@ -231,7 +231,7 @@ footer img {
        
         margin: 0;
         padding: 0;
-        background-image: url('fondo1.jpg');
+        background-image: url("fondo1.jpg");
         background-size: cover;
     } 
   }
