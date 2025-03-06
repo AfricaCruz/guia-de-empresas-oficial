@@ -240,7 +240,7 @@ footer img {
 
    
     footer img {
-        content: url("../footer2.jpg"); /* Imagen para pantallas grandes */
+        content: url("../footer2.png"); /* Imagen para pantallas grandes */
     max-height: 150px; /* Limita la altura */
         min-width:768px ;
     }
