@@ -239,10 +239,11 @@ footer img {
     }
 
    
-        footer img {
-            content: url("../footer2.jpg"); /* Imagen para pantallas pequeñas */
-            height: 100px; /* Ajusta la altura de la imagen para móviles */
-        }
+    footer img {
+        content: url("../footer.jpg"); /* Imagen para pantallas grandes */
+        height: auto; /* Permite que la imagen se ajuste */
+        max-height: 150px; /* Limita la altura */
+    }
     }
 }
  
