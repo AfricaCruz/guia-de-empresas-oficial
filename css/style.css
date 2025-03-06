@@ -238,10 +238,9 @@ footer img {
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
     }
 
-   
     footer img {
         content: url("../footer-movil.jpg"); /* Imagen para pantallas grandes */
-    max-height: 150px; /* Limita la altura */
-        min-width:768px ;
+        max-height: 150px; /* Limita la altura para pantallas grandes */
+        width: auto; /* Ajusta el ancho automáticamente para que mantenga la proporción */
     }
-    }
+}
