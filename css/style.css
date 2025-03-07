@@ -248,13 +248,3 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
     }
 }
-nav ul {
-    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
-    align-items: center;
-}
-
-nav ul li {
-    width: 100%;
-    text-align: center; /* Centra los elementos */
-    padding: 10px 0; /* Espaciado entre elementos */
-}

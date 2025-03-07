@@ -138,8 +138,3 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
     }
 }
-nav ul {
-    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
-    align-items: center;
-}
-
