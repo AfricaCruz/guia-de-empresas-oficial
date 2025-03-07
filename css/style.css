@@ -242,7 +242,7 @@ footer img {
     }
 
     footer img {
-        content: url("../footer-high.jpg"); /* Imagen específica para móviles */
+        content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
         max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
