@@ -266,7 +266,7 @@ nav ul li {
     margin-top: 1rem;
     display: flex;
     justify-content:center; /* Mueve el contenido a la derecha */
-    transform: translateY(-100);
+    padding: 25%;
 }
 
 }
