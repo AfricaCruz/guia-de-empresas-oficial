@@ -166,7 +166,7 @@
     <h2>Registro en la Guía de Empresas</h2>
     <h5>¿Tienes una empresa en la localidad y quieres formar parte de ésta guía?</h5>
     <p>Rellene este formulario para iniciar el trámite:</p>
-    <form onsubmit="validarFormulario(event)">
+    <form onsubmit="validarFormulario(event)" action="enviar.php" method="post">
         <label for="nombre" class="required">Nombre de la Empresa:</label>
         <input type="text" id="nombre" name="nombre" required>
 
