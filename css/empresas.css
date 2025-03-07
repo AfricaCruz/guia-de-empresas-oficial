@@ -143,8 +143,3 @@ nav ul {
     align-items: center;
 }
 
-nav ul li {
-    width: 100%;
-    text-align: center; /* Centra los elementos */
-    padding: 10px 0; /* Espaciado entre elementos */
-}
