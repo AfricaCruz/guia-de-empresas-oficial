@@ -221,6 +221,7 @@ footer img {
 }
 @media screen and (max-width: 480px) {
     header {
+<<<<<<< HEAD
             position: relative;
             width: 100%;
             height: 100vh; /* La cabecera ocupa toda la altura de la ventana */
@@ -231,6 +232,22 @@ footer img {
             background-position: center; /* Centra la imagen en la cabecera */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             overflow: hidden; /* Impide el scroll en caso de recorte */
+=======
+        header {
+            align-items: center;
+            justify-content: space-between;
+            background-image: url("../cabecera-grande.jpg");
+            height: 150px;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #aaa;
+            background-size:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:auto;
+        }
+        
+>>>>>>> a8f62dc028c3bd515001af65dc68d77ec59cd899
     }
  
     body {
