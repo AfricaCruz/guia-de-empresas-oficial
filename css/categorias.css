@@ -77,7 +77,6 @@
             margin-top: 5rem;
             display: flex;
             justify-content: center;
-            padding: 25%;
         }
         
         .search-bar form {
@@ -122,7 +121,7 @@
         }
         @media screen and (max-width: 480px) {
             header {
-                 background-image: url("admin.jpg");
+                 background-image: url("fondo_cabecera.jpg");
                  height: 150px;
                  background-size: 100% 100%;  /* Esto asegura que la imagen de fondo se ajuste al contenedor */
                  background-position: center;
@@ -148,10 +147,6 @@
                 width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
                 height: auto; /* Mantiene la proporción de la imagen */
                 object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
-            }
-            .search-bar {
-                display: flex;
-                justify-content: center;
             }
         }
         
