@@ -222,17 +222,18 @@ footer img {
 @media screen and (max-width: 480px) {
     header {
         header {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* La cabecera ocupa toda la altura de la ventana */
-            margin: 0; /* Elimina cualquier margen alrededor del header */
-            padding: 0; /* Elimina cualquier relleno interno */
-            background-image: url('../cabecera-grande.jpg');
-            background-size: 100% 100%; /* Ajusta la imagen para cubrir toda la cabecera */
-            background-position: center; /* Centra la imagen en la cabecera */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            overflow: hidden; /* Impide el scroll en caso de recorte */
-          }
+            align-items: center;
+            justify-content: space-between;
+            background-image: url("../cabecera-grande.jpg");
+            height: 150px;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #aaa;
+            background-size:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:auto;
+        }
         
     }
  
