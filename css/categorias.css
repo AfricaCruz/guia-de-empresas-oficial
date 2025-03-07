@@ -162,5 +162,11 @@
                 justify-content: center;
                 margin-top: 20%;
             }
+            .business-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 0.5fr));
+                gap: 3.5rem;
+                padding: 1rem;
+            }
         }
         
