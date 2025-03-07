@@ -142,7 +142,7 @@
             }
         
             footer img {
-                content: url("../footer-high.jpg"); /* Imagen específica para móviles */
+                content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
                 max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
                 width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
                 height: auto; /* Mantiene la proporción de la imagen */
@@ -161,6 +161,12 @@
                 display: flex;
                 justify-content: center;
                 margin-top: 20%;
+            }
+            .business-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 0.5fr));
+                gap: 3.5rem;
+                padding: 1rem;
             }
         }
         
