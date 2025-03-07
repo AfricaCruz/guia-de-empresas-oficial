@@ -228,7 +228,7 @@ footer img {
             margin: 0; /* Elimina cualquier margen alrededor del header */
             padding: 0; /* Elimina cualquier relleno interno */
             background-image: url('../cabecera-grande.jpg');
-            background-size: cover; /* Ajusta la imagen para cubrir toda la cabecera */
+            background-size: 100% 100%; /* Ajusta la imagen para cubrir toda la cabecera */
             background-position: center; /* Centra la imagen en la cabecera */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             overflow: hidden; /* Impide el scroll en caso de recorte */
