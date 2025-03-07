@@ -10,6 +10,7 @@
             background-image: url('fondo1.jpg');
             padding: 50px;
             background-size: cover;
+            margin: 0;
         }
 
         h2 {
@@ -26,7 +27,6 @@
             margin-bottom: 25px;
         }
         p{
-    
             color: rgb(20, 18, 80);
             margin-bottom:30px ;
             font-style: italic;
@@ -34,10 +34,10 @@
 
         label {
             font-weight: 700;
-            margin: 16px  10px;
+            margin: 16px 10px;
             color: #051742;
-            display: list-item;
-            position: absolute;
+            display: block;
+            position: relative;
         }
 
         .required::after {
@@ -46,17 +46,16 @@
         }
 
         input, textarea {
-            width: 70%;
-            max-width: 70%;
+            width: 100%;
+            max-width: 100%;
             padding: 12px;
             margin-top: 12px;
             border: 0.5px solid #fffefe;
             border-radius: 5px;
             background: #f9f9f9c8;
             outline: none;
-            font-size: 14px;
-            display: block;
-            margin-left: 220px;
+            font-size: 12px;
+            margin-left: 0;
         }
 
         input:focus, textarea:focus {
@@ -65,7 +64,6 @@
         }
 
         button {
-         
             padding: 12px;
             background: #007bff;
             color: #fff;
@@ -73,14 +71,56 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
-            margin-left: 44%;
             font-size: 16px;
             transition: background 0.3s;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         button:hover {
             background: #0056b3;
+        }
+
+        /* Media Queries */
+        @media (min-width: 600px) {
+            input, textarea {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            input, textarea {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            button {
+                width: 70%;
+            }
+        }
+
+        /* Additional adjustments for small screens */
+        @media (max-width: 599px) {
+            body {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h5 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
         }
     </style>
     <script>
