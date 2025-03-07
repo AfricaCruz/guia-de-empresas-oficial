@@ -221,12 +221,15 @@ footer img {
 }
 @media screen and (max-width: 480px) {
     header {
-         background-image: url("fondo_cabecera.jpg");
-         height: 150px;
-         background-size: 100% 100%;  /* Esto asegura que la imagen de fondo se ajuste al contenedor */
-         background-position: center;
-         background-repeat: no-repeat;
-         width: 100%;  /* Se asegura de que el header ocupe todo el ancho disponible */
+            position: relative;
+            width: 100%;
+            margin: 0; /* Elimina cualquier margen alrededor del header */
+            padding: 0; /* Elimina cualquier relleno interno */
+            background-image: url('../cabecera-grande.jpg');
+            background-size: 100% 100%; /* Ajusta la imagen para cubrir toda la cabecera */
+            background-position: center; /* Centra la imagen en la cabecera */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            overflow: hidden; /* Impide el scroll en caso de recorte */
     }
  
     body {
@@ -242,7 +245,7 @@ footer img {
     }
 
     footer img {
-        content: url("../footer-high.jpg"); /* Imagen específica para móviles */
+        content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
         max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
@@ -263,6 +266,7 @@ nav ul li {
     margin-top: 1rem;
     display: flex;
     justify-content:center; /* Mueve el contenido a la derecha */
+    padding: 25%;
 }
 
 }
