@@ -266,11 +266,7 @@ nav ul li {
     margin-top: 1rem;
     display: flex;
     justify-content:center; /* Mueve el contenido a la derecha */
-<<<<<<< HEAD
-    padding: 100%;
-=======
-    transform: translateY(-100);
->>>>>>> db8a8e2217e187052a3522615af7db2ee9289419
+    padding: 25%;
 }
 
 }
