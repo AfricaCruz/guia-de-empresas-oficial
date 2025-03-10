@@ -119,7 +119,7 @@ footer img {
     body {
         height: 100%;
         margin: 0;
-        overflow: hidden; /* Evita el scroll innecesario */
+    }
 
     footer img {
         content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
