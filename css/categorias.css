@@ -11,7 +11,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     padding: 1.8rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Dancing Script", cursive;
     font-size: 15px;
     color: #2c3e50;
     display: flex;
@@ -25,7 +25,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Dancing Script", cursive;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@ h1 {
 header{
     text-align: center;
     background-image: url('admin.jpg');
-    font-family: "Roboto Mono", monospace;
+    font-family: "Dancing Script", cursive;
     color: #1d1e22;
 }
 .breadcrumb {
@@ -56,7 +56,7 @@ header{
     background: #fff;
     border-radius: 5px;
     font-size:18px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Dancing Script", cursive;
 }
 .breadcrumb li {
     margin: 0 5px;
