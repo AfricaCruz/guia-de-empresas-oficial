@@ -6,7 +6,14 @@ body {
     padding: 0;
     background-image: url('fondo1.jpg');
     background-size: cover;
+    display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
+#footer{
+    grid-row-start: 4;
+  }
+  
 
 header {
     align-items: center;
@@ -233,10 +240,9 @@ footer img {
         background-image: url("fondo2.jpg");
         background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
         background-position: center;  /* Centra la imagen de fondo */
-    }
-    body {
-        background-size: cover;
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+        display: inline;
+
     }
 
     footer img {
