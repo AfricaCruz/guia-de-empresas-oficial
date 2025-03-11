@@ -39,7 +39,7 @@ h1 {
     text-align: left;
     padding-left: 50px;
     color: #ffffff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Roboto Mono", monospace;
     text-shadow: 5px 5px 5px rgba(3, 3, 3, 0.973);
 }
 
@@ -144,14 +144,14 @@ h4{
     text-align: center;
     color: #353434;
     font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Roboto Mono", monospace;
 
 }
 h2{
     margin-top: 0px;
     font-size: 25px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: "Roboto Mono", monospace;
 
 }
 
