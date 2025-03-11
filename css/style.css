@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-image: url('fondo1.jpg');
     background-size: cover;
-    display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
 }
