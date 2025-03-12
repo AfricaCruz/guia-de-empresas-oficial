@@ -240,7 +240,10 @@ footer img {
     }
 
     footer img {
-        height: 40px; /* Ajustado para pantallas pequeñas */
-        object-fit: cover;
+        content: url("../footer-mob.jpg");
+        max-height: 100px;
+        width: 100%;
+        height: auto; /* Ajustado para pantallas pequeñas */
+        object-fit: contain;
     }
 }
