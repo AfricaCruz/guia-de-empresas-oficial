@@ -228,7 +228,7 @@ footer img {
         width: 100%;
         margin: 0; /* Elimina cualquier margen alrededor del header */
         padding: 0; /* Elimina cualquier relleno interno */
-        background-image: url('cabecera_movil.jpg');
+        background-image: url('../css/cabecera_movil.jpg');
         background-size: cover;
         background-position: center; /* Centra la imagen en la cabecera */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
