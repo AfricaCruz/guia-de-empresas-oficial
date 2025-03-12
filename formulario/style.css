@@ -242,6 +242,6 @@ footer img {
         max-height: 100px;
         width: 100%;
         height: auto; /* Ajustado para pantallas pequeñas */
-        object-fit: cover;
+        object-fit: contain;
     }
 }
