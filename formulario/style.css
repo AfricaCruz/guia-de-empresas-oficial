@@ -96,7 +96,27 @@ button {
 button:hover {
     background: #0056b3;
 }
+footer {
+    text-align: center;
+    background-color: white;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
 
+footer p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+}
+
+footer img {
+    height: 50px; /* Mantiene la proporción y evita que se deforme */
+    object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
+}
 
         /* Media Queries */
         @media (min-width: 600px) {
