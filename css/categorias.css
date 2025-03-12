@@ -46,7 +46,7 @@ h1 {
 header{
     text-align: center;
     background-image: url('admin.jpg');
-    font-family: "Dancing Script", cursive;
+    font-family: Arial, sans-serif;
     color: #1d1e22;
 }
 .breadcrumb {
