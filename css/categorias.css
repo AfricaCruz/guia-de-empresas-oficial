@@ -164,8 +164,4 @@ footer img {
         margin: 0;
         color: rgb(0, 0, 0);
     }
-    footer img {
-        height: 50px; /* Mantiene la proporción y evita que se deforme */
-        object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
-    }
 }
