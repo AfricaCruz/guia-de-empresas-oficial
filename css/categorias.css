@@ -131,23 +131,6 @@ footer img {
         background-position: center;  /* Centra la imagen de fondo */
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
     }
-    footer img {
-        content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
-        max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
-    }
-    footer {
-        text-align: center;
-        background-color: white;
-        position: static;
-        bottom: 0;
-        width: 100%;
-        height: 8rem;
-        display: inline;
-
-    }
     .search-bar {
         display: flex;
         justify-content: center;
@@ -162,8 +145,19 @@ footer img {
     footer {
         text-align: center;
         background-color: white;
+        position: static;
         bottom: 0;
         width: 100%;
+        height: 8rem;
+        display: inline;
+
+    }
+    footer img {
+        content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
+        max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
     }
     footer p {
         font-size: 10px;
