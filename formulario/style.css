@@ -23,7 +23,7 @@ form {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ label {
 }
 
 input, textarea {
-    width: 90%;
+    width: 95%;
     padding: 12px;
     margin-top: 12px;
     border: 0.5px solid #ccc;
@@ -89,13 +89,14 @@ button {
     margin-top: 20px;
     font-size: 16px;
     transition: background 0.3s;
-    width: 90%;
+    width: 95%;
     text-align: center;
 }
 
 button:hover {
     background: #0056b3;
 }
+
 
         /* Media Queries */
         @media (min-width: 600px) {
