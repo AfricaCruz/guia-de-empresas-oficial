@@ -104,7 +104,15 @@ footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("fondo2.jpg");
+        background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
+        background-position: center;  /* Centra la imagen de fondo */
+        height: 100%;
+    }
     main, header h1 {
         padding: 1.2rem;
     }
@@ -114,41 +122,21 @@ footer img {
     .image-slider {
         aspect-ratio: 4/3;
     }
-}
-footer {
-    text-align: center;
-    background-color: white;
-    position: static;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-}
-
-footer p {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
-    color: rgb(0, 0, 0);
-    font-family: Arial, sans-serif;
-}
-
-footer img {
-    height: 50px; /* Mantiene la proporción y evita que se deforme */
-    object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
-}
-@media screen and (max-width: 480px) {
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url("fondo2.jpg");
-        background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
-        background-position: center;  /* Centra la imagen de fondo */
+    footer {
+        text-align: center;
+        background-color: white;
+        position: static;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
     }
-    body {
-        height: 100%;
+    footer p {
+        font-size: 12px;
+        font-weight: bold;
         margin: 0;
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
     }
-
     footer img {
         content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
         max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
@@ -156,5 +144,5 @@ footer img {
         height: auto; /* Mantiene la proporción de la imagen */
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
-      
+    }
 }
