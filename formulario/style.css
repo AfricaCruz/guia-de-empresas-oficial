@@ -126,23 +126,7 @@ footer img {
                 margin-left: auto;
                 margin-right: auto;
             }
-        }
 
-        @media (min-width: 768px) {
-            input, textarea {
-                width: 70%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            button {
-                width: 70%;
-            }
-        }
-
-        /* Additional adjustments for small screens */
-        @media (max-width: 599px) {
-           
             h2 {
                 font-size: 30px;
             }
@@ -174,7 +158,6 @@ footer img {
         footer img {
             max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
             width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-            
             object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
             position: static;
         }
