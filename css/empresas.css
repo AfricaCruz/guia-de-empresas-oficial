@@ -109,6 +109,7 @@ footer p {
     font-weight: bold;
     margin: 0;
     color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
 }
 footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
