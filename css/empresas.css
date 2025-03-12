@@ -155,5 +155,6 @@ footer img {
         height: auto; /* Mantiene la proporción de la imagen */
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
+        min-height: 10vh;
     }
 }
