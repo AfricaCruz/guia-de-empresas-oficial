@@ -6,13 +6,13 @@ body {
     padding: 0;
     background-image: url('fondo1.jpg');
     background-size: cover;
-  grid-template-rows: 1fr auto;
-  min-height: 100vh;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
 }
 #footer{
     grid-row-start: 4;
-  }
-  
+}
+
 
 header {
     align-items: center;
