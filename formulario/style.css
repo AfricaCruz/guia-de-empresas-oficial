@@ -143,10 +143,7 @@ footer img {
 
         /* Additional adjustments for small screens */
         @media (max-width: 599px) {
-            body {
-                padding: 50px;
-            }
-
+           
             h2 {
                 font-size: 30px;
             }

@@ -110,7 +110,6 @@ footer p {
     font-family: Arial, sans-serif;
 }
 
-<<<<<<< Updated upstream
 footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
@@ -164,7 +163,6 @@ footer img {
         padding: 1rem;
     }
 }
-=======
         footer {
             text-align: center;
             background-color: white;
@@ -236,4 +234,3 @@ footer img {
             }
         }
         
->>>>>>> Stashed changes
