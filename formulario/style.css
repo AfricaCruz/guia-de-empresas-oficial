@@ -117,6 +117,29 @@ footer img {
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
 
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    font-size:18px;
+    font-family: "Roboto Mono", monospace;
+}
+.breadcrumb li {
+    margin: 0 5px;
+}
+.breadcrumb li a {
+    text-decoration: none;
+    color: #92a9c2;
+    font-size:18px;
+}
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    margin-left: 5px;
+    color: #333;
+}
+
 @media (max-width: 480px) {
     body {
         font-family: 'Poppins', sans-serif;
