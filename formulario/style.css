@@ -291,7 +291,6 @@ button:hover {
 #alta-link {
     pointer-events: none; /* Deshabilitar enlace en móvil */
     }
-.mobile-only {
     .mobile-only {
         display: block;
     }
