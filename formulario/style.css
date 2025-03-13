@@ -283,16 +283,13 @@ button {
 button:hover {
     background: #0056b3;
 }
-<<<<<<< HEAD
 
 /* Remover el atributo target="_blank" solo en móviles */
 #alta-link {
     pointer-events: none; /* Deshabilitar enlace en móvil */
   }
-=======
 .mobile-only {
     .mobile-only {
         display: block;
     }
->>>>>>> 24ae2b191f74fdcb069ac5f5034cece7990a5bfd
 }
