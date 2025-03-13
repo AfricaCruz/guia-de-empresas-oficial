@@ -34,3 +34,15 @@
             alert("Formulario enviado correctamente, nos pondremos en contacto con usted.");
             event.target.submit();
         }
+        // Detectar el tamaño de la pantalla y modificar el atributo target
+window.addEventListener('resize', function() {
+    var link = document.getElementById('alta-link');
+    if (window.innerWidth <= 768) {
+      link.removeAttribute('target');
+    } else {
+      link.setAttribute('target', '_blank');
+    }
+  });
+  
+  // Ejecutar la función al cargar la página
+  window.dispatchEvent(new Event('resize'));

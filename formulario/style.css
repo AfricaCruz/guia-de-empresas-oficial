@@ -139,6 +139,9 @@ footer img {
     margin-left: 5px;
     color: #333;
 }
+.mobile-only {
+    display: none;
+}
 
 @media (max-width: 480px) {
     body {
@@ -266,7 +269,6 @@ footer img {
         height: auto; /* Ajustado para pantallas pequeñas */
         object-fit: contain;
     }
-}
 button {
     padding: 12px;
     background: #007bff;
@@ -284,7 +286,11 @@ button {
 button:hover {
     background: #0056b3;
 }
-.mobile-only {
+
+/* Remover el atributo target="_blank" solo en móviles */
+#alta-link {
+    pointer-events: none; /* Deshabilitar enlace en móvil */
+    }
     .mobile-only {
         display: block;
     }
