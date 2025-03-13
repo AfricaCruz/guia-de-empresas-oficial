@@ -139,10 +139,9 @@ footer img {
     margin-left: 5px;
     color: #333;
 }
-.mobile-only {
-    display: none;
-}
 
+
+   
 @media (max-width: 480px) {
     body {
         font-family: 'Poppins', sans-serif;
@@ -285,13 +284,4 @@ button {
 
 button:hover {
     background: #0056b3;
-}
-
-/* Remover el atributo target="_blank" solo en móviles */
-#alta-link {
-    pointer-events: none; /* Deshabilitar enlace en móvil */
-    }
-    .mobile-only {
-        display: block;
-    }
 }
