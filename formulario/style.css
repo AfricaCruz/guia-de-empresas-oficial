@@ -266,7 +266,6 @@ footer img {
         height: auto; /* Ajustado para pantallas pequeñas */
         object-fit: contain;
     }
-}
 button {
     padding: 12px;
     background: #007bff;
@@ -283,4 +282,10 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+/* Remover el atributo target="_blank" solo en móviles */
+#alta-link {
+    pointer-events: none; /* Deshabilitar enlace en móvil */
+  }
 }
