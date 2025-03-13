@@ -63,7 +63,7 @@ header{
 }
 .breadcrumb li a {
     text-decoration: none;
-    color: #92a9c2;
+    color: #2563eb;
     font-size:18px;
 }
 .breadcrumb li:not(:last-child)::after {
