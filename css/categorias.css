@@ -126,7 +126,7 @@ footer img {
     body {
         margin: 0;
         padding: 0;
-        background-image: url("fondo2.jpg");
+        background-image: url("fondo_movil.jpg");
         background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
         background-position: center;  /* Centra la imagen de fondo */
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
