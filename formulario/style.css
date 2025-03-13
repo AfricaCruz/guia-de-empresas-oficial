@@ -285,6 +285,7 @@ button:hover {
     background: #0056b3;
 }
 .mobile-only {
-    display: none;
-}
+    .mobile-only {
+        display: block;
+    }
 }
