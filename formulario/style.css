@@ -267,3 +267,20 @@ footer img {
         object-fit: contain;
     }
 }
+button {
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 95%;
+    text-align: center;
+}
+
+button:hover {
+    background: #0056b3;
+}
