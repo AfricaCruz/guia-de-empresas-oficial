@@ -96,13 +96,11 @@ header{
 footer {
     text-align: center;
     background-color: white;
- 
     bottom: 0;
     width: 100%;
     height: 5rem;
     position: static;
 }
-
 footer p {
     font-size: 12px;
     font-weight: bold;
@@ -110,7 +108,6 @@ footer p {
     color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
 }
-
 footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
@@ -150,7 +147,6 @@ footer img {
         width: 100%;
         height: 5rem;
         position: static;
-       
     }
     footer img {
         content: url("../footer-mob.jpg"); /* Imagen específica para móviles */
