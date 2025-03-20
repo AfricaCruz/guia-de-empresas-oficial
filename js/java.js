@@ -64,7 +64,6 @@ window.addEventListener("load", function () {
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
 
-<<<<<<< HEAD
     document.addEventListener("DOMContentLoaded", function () {
         console.log("✅ Script de cookies cargado correctamente.");
     
@@ -101,30 +100,3 @@ window.addEventListener("load", function () {
         }
     });
     
-=======
-        document.addEventListener("DOMContentLoaded", function () {
-            const cookieBanner = document.getElementById("cookie-banner");
-            const acceptButton = document.getElementById("accept-cookies");
-            const rejectButton = document.getElementById("reject-cookies");
-
-            // Función para ocultar el banner y guardar la decisión
-            function setCookieConsent(consent) {
-                localStorage.setItem("cookie-consent", consent);
-                cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
-            }
-
-            // Eventos de botones
-            acceptButton.addEventListener("click", function () {
-                setCookieConsent("accepted");
-            });
-
-            rejectButton.addEventListener("click", function () {
-                setCookieConsent("rejected");
-            });
-
-            // Verificar si ya hay una decisión guardada
-            if (!localStorage.getItem("cookie-consent")) {
-                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
-            }
-        });
->>>>>>> cde017807b90c7ed44a0f58dba0a6eab1bb96bbc
