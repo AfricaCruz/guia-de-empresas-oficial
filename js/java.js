@@ -86,7 +86,19 @@ window.addEventListener("load", function () {
     });
     rejectButton.addEventListener("click", function () {
         setCookieConsent("rejected");
+    });           
+     // Si acepta las cookies
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("cookie-preference", "accepted"); // Guardar en localStorage
+        cookieBanner.style.display = "none"; // Ocultar el banner
     });
+
+    // Si rechaza las cookies
+    rejectButton.addEventListener("click", function () {
+        localStorage.setItem("cookie-preference", "rejected"); // Guardar en localStorage
+        cookieBanner.style.display = "none"; // Ocultar el banner
+    });
+
 // Verificar si ya hay una decisión
     if (localStorage.getItem("cookie-consent")) {
         cookieBanner.style.display = "none";
