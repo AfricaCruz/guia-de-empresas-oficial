@@ -145,7 +145,7 @@ footer img {
 @media (max-width: 480px) {
     body {
         font-family: 'Poppins', sans-serif;
-        background-image: url('../css/fondo_movil.jpg');
+        background-image: url('../css/fondo_movil.webp');
         background-size: cover;
         margin: 0;
         display: flex;
@@ -262,7 +262,7 @@ footer img {
     }
 
     footer img {
-        content: url("../footer-mob.jpg");
+        content: url("../footer-mob.webp");
         max-height: 100px;
         width: 100%;
         height: auto; /* Ajustado para pantallas pequeñas */
