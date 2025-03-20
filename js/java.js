@@ -64,30 +64,34 @@ window.addEventListener("load", function () {
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const cookieConsent = document.getElementById('cookie-consent');
-        const acceptButton = document.getElementById('accept-cookies');
-        const rejectButton = document.getElementById('reject-cookies');
-    
-        // Comprobar si el usuario ya ha aceptado o rechazado las cookies
-        const cookiePreference = localStorage.getItem('cookiePreference');
-    
-        if (!cookiePreference) {
-            // Si no hay preferencia guardada, mostrar el aviso
-            cookieConsent.style.display = 'block';
-        }
-    
-        // Aceptar cookies
-        acceptButton.addEventListener('click', function () {
-            localStorage.setItem('cookiePreference', 'accepted');
-            cookieConsent.style.display = 'none';
-            // Aquí puedes agregar código para activar cookies de seguimiento (por ejemplo, Google Analytics)
-        });
-    
-        // Rechazar cookies
-        rejectButton.addEventListener('click', function () {
-            localStorage.setItem('cookiePreference', 'rejected');
-            cookieConsent.style.display = 'none';
-            // Aquí puedes desactivar cookies no esenciales
-        });
+    // Gestión del consentimiento de cookies
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptButton = document.getElementById('accept-cookies');
+    const rejectButton = document.getElementById('reject-cookies');
+
+    // Comprobar si el usuario ya ha aceptado o rechazado las cookies
+    const cookiePreference = localStorage.getItem('cookiePreference');
+
+    if (!cookiePreference) {
+        // Si no hay preferencia guardada, mostrar el aviso
+        cookieConsent.style.display = 'block';
+    } else {
+        // Si ya se ha aceptado o rechazado las cookies, no mostrar el aviso
+        cookieConsent.style.display = 'none';
+    }
+
+    // Aceptar cookies
+    acceptButton.addEventListener('click', function () {
+        localStorage.setItem('cookiePreference', 'accepted');
+        cookieConsent.style.display = 'none';
+        // Aquí puedes agregar código para activar cookies de seguimiento (por ejemplo, Google Analytics)
     });
+
+    // Rechazar cookies
+    rejectButton.addEventListener('click', function () {
+        localStorage.setItem('cookiePreference', 'rejected');
+        cookieConsent.style.display = 'none';
+        // Aquí puedes desactivar cookies no esenciales
+    });
+});
+
