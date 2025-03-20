@@ -63,7 +63,6 @@ window.addEventListener("load", function () {
         }, delay);
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
-    document.addEventListener("DOMContentLoaded", function () {
 
         document.addEventListener("DOMContentLoaded", function () {
             const cookieBanner = document.getElementById("cookie-banner");
