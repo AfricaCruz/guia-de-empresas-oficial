@@ -191,6 +191,52 @@ footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
+/* Estilos para cookies */
+.cookie-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+.cookie-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.cookie-container a {
+    color: #4da6ff;
+    text-decoration: underline;
+}
+.cookie-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cookie-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+.reject {
+    background-color: #d9534f;
+    color: white;
+}
+.cookie-btn:hover {
+    opacity: 0.8;
+}
 @media screen and (max-width: 480px) {
     header {
         position: relative;
