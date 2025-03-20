@@ -191,24 +191,24 @@ footer img {
     height: 50px; /* Mantiene la proporción y evita que se deforme */
     object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
 }
-/* Estilos para cookies */
+/* Estilos para el banner de cookies */
 .cookie-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #333;
+    background: #2d2d2d;
     color: white;
     padding: 15px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none; /* Se mostrará con JavaScript */
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Se activará con JS */
     flex-direction: column;
     font-family: Arial, sans-serif;
-    z-index: 1000; /* Para asegurarse de que está por encima de otros elementos */
+    z-index: 1000;
 }
 
-.cookie-container p {
+.cookie-content p {
     margin: 5px 0;
     font-size: 14px;
 }
@@ -233,17 +233,23 @@ footer img {
 }
 
 .accept {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
 }
 
 .reject {
-    background-color: #d9534f;
+    background-color: #6c757d;
     color: white;
 }
 
 .cookie-btn:hover {
     opacity: 0.8;
+}
+
+/* Icono de galleta */
+.cookie-content p i {
+    margin-right: 8px;
+    color: #f4c542;
 }
 @media screen and (max-width: 480px) {
     header {
