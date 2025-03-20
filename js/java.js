@@ -1,76 +1,25 @@
-// Script para el slider de imágenes
-const images = document.querySelectorAll('.slider-image');
-let currentImage = 0;
-
-function nextImage() {
-    images[currentImage].classList.remove('active');
-    currentImage = (currentImage + 1) % images.length;
-    images[currentImage].classList.add('active');
-}
-
-setInterval(nextImage, 3000); // Cambia la imagen cada 3 segundos
-
-// Script para insertar el texto del enlace copiando el contenido href
-const webLink = document.getElementById('company-web');
-if (webLink) {
-    webLink.textContent = webLink.href;
-}
-
-// Buscador index principal
-function searchCategories() {
-    let input = document.getElementById('search').value.toLowerCase();
-    let items = document.querySelectorAll('.category-item');
-
-    items.forEach(item => {
-        let text = item.innerText.toLowerCase();
-        item.style.display = text.includes(input) ? "flex" : "none";
-        if (text.includes(input)) {
-            item.style.flexDirection = "column"; // Asegura que se vea bien
-        }
-    });
-}
-
-// Buscador diferentes categorías
-function searchBusinesses() {
-    let input = document.getElementById('search').value.toLowerCase();
-    let businessCards = document.querySelectorAll('.business-card');
-
-    businessCards.forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(input) ? "flex" : "none";
-    });
-}
-
-// Función debounce para optimizar el buscador y evitar múltiples ejecuciones innecesarias
-function debounce(func, delay) {
-    let timeout;
-    return function () {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func(), delay);
-    };
-}
-
-document.getElementById('search').addEventListener('keyup', debounce(searchBusinesses, 300));
-
-// JavaScript para añadir la clase 'active' poco a poco a cada categoría
 window.addEventListener("load", function () {
-    const categories = document.querySelectorAll('.category');
-    let delay = 500;
+    // Verificar si el DOM se cargó correctamente
+    console.log("DOM completamente cargado");
 
-    categories.forEach((category, index) => {
-        setTimeout(() => {
-            category.classList.add('active');
-        }, delay);
-        delay += 500; // Agrega un retraso de 500ms entre cada categoría
-    });
-
-    // Gestión del consentimiento de cookies
     const cookieConsent = document.getElementById('cookie-consent');
     const acceptButton = document.getElementById('accept-cookies');
     const rejectButton = document.getElementById('reject-cookies');
 
+    // Verificar si los elementos existen en el DOM
+    console.log("cookieConsent:", cookieConsent);
+    console.log("acceptButton:", acceptButton);
+    console.log("rejectButton:", rejectButton);
+
+    // Comprobar si los elementos fueron encontrados
+    if (!cookieConsent || !acceptButton || !rejectButton) {
+        console.error("Los elementos de consentimiento de cookies no se encuentran.");
+        return; // Salir si no se encuentran los elementos
+    }
+
     // Comprobar si el usuario ya ha aceptado o rechazado las cookies
     const cookiePreference = localStorage.getItem('cookiePreference');
+    console.log("Preferencia de cookies guardada:", cookiePreference);
 
     if (!cookiePreference) {
         // Si no hay preferencia guardada, mostrar el aviso
@@ -84,6 +33,7 @@ window.addEventListener("load", function () {
     acceptButton.addEventListener('click', function () {
         localStorage.setItem('cookiePreference', 'accepted');
         cookieConsent.style.display = 'none';
+        console.log("Cookies aceptadas");
         // Aquí puedes agregar código para activar cookies de seguimiento (por ejemplo, Google Analytics)
     });
 
@@ -91,8 +41,10 @@ window.addEventListener("load", function () {
     rejectButton.addEventListener('click', function () {
         localStorage.setItem('cookiePreference', 'rejected');
         cookieConsent.style.display = 'none';
+        console.log("Cookies rechazadas");
         // Aquí puedes desactivar cookies no esenciales
     });
 });
+
 
 
