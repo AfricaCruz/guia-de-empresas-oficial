@@ -258,7 +258,7 @@ footer img {
         bottom: 0;
         width: 100%;
         height: 5rem;
-        position:fixed;
+        position:static;
         padding-bottom: 5px;
     }
 
