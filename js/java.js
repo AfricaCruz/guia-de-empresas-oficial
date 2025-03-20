@@ -70,15 +70,10 @@ window.addEventListener("load", function () {
             const acceptButton = document.getElementById("accept-cookies");
             const rejectButton = document.getElementById("reject-cookies");
 
-            // Verificar si el usuario ya tomó una decisión
-            if (!localStorage.getItem("cookie-consent")) {
-                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
-            }
-
             // Función para ocultar el banner y guardar la decisión
             function setCookieConsent(consent) {
                 localStorage.setItem("cookie-consent", consent);
-                cookieBanner.style.display = "none";
+                cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
             }
 
             // Eventos de botones
@@ -89,4 +84,9 @@ window.addEventListener("load", function () {
             rejectButton.addEventListener("click", function () {
                 setCookieConsent("rejected");
             });
+
+            // Verificar si ya hay una decisión guardada
+            if (!localStorage.getItem("cookie-consent")) {
+                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
+            }
         });
