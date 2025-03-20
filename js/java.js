@@ -63,7 +63,6 @@ window.addEventListener("load", function () {
         }, delay);
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
-<<<<<<< HEAD
 
     document.addEventListener('DOMContentLoaded', function () {
         const cookieConsent = document.getElementById('cookie-consent');
@@ -92,48 +91,3 @@ window.addEventListener("load", function () {
             // Aquí puedes desactivar cookies no esenciales
         });
     });
-=======
-    document.addEventListener("DOMContentLoaded", function () {
-        document.addEventListener("DOMContentLoaded", function () {
-            const cookieBanner = document.getElementById("cookie-banner");
-            const acceptButton = document.getElementById("accept-cookies");
-            const rejectButton = document.getElementById("reject-cookies");
-            document.addEventListener("DOMContentLoaded", function () {
-                const cookieBanner = document.getElementById("cookie-banner");
-                const acceptButton = document.getElementById("accept-cookies");
-                const rejectButton = document.getElementById("reject-cookies");
-            
-                document.addEventListener("DOMContentLoaded", function () {
-                    const cookieBanner = document.getElementById("cookie-banner");
-                    const acceptButton = document.getElementById("accept-cookies");
-                    const rejectButton = document.getElementById("reject-cookies");
-                
-                    // Verificamos si ya hay una preferencia de cookies guardada
-                    const cookiePreference = localStorage.getItem("cookie-preference");
-                    console.log("Cookie Preference: ", cookiePreference); // Verifica el valor almacenado
-                
-                    if (cookiePreference) {
-                        cookieBanner.classList.add("hidden"); // Ocultar el banner si ya hay una decisión
-                    } else {
-                        cookieBanner.classList.remove("hidden"); // Mostrar el banner si no hay decisión
-                    }
-                
-                    document.addEventListener('DOMContentLoaded', function () {
-                        var cookieConsent = document.getElementById('cookieConsent');
-                        var acceptCookies = document.getElementById('acceptCookies');
-                      
-                        // Verificar si ya se ha aceptado las cookies
-                        if (localStorage.getItem('cookiesAccepted')) {
-                          cookieConsent.style.display = 'none';
-                        }
-                      
-                        // Evento para aceptar las cookies
-                        acceptCookies.addEventListener('click', function () {
-                          localStorage.setItem('cookiesAccepted', 'true');
-                          cookieConsent.style.display = 'none';
-                        });
-                      });
-                      
-                
-            
->>>>>>> 5c11de5ccfff74d34408582070528680e28f8116
