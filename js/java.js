@@ -73,30 +73,46 @@ window.addEventListener("load", function () {
                 const acceptButton = document.getElementById("accept-cookies");
                 const rejectButton = document.getElementById("reject-cookies");
             
-                // Verificar si el usuario ya aceptó o rechazó las cookies
-                if (localStorage.getItem("cookie-preference")) {
-                    console.log("Preferencia de cookies encontrada:", localStorage.getItem("cookie-preference"));
-                    cookieBanner.style.display = "none"; // Ocultar el banner si ya hay una decisión
-                } else {
-                    console.log("No se ha encontrado preferencia de cookies, mostrando banner.");
-                    cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
-                }
-            
-                // Función para guardar la decisión y ocultar el banner
-                function setCookieConsent(consent) {
-                    console.log("Guardando preferencia de cookies:", consent);
-                    localStorage.setItem("cookie-preference", consent);
-                    cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
-                }
-            
-                // Evento para aceptar las cookies
-                acceptButton.addEventListener("click", function () {
-                    setCookieConsent("accepted"); // Guardar como "aceptado"
+                document.addEventListener("DOMContentLoaded", function () {
+                    const cookieBanner = document.getElementById("cookie-banner");
+                    const acceptButton = document.getElementById("accept-cookies");
+                    const rejectButton = document.getElementById("reject-cookies");
+                
+                    // Verificamos si ya hay una preferencia de cookies guardada
+                    const cookiePreference = localStorage.getItem("cookie-preference");
+                    console.log("Cookie Preference: ", cookiePreference); // Verifica el valor almacenado
+                
+                    if (cookiePreference) {
+                        cookieBanner.classList.add("hidden"); // Ocultar el banner si ya hay una decisión
+                    } else {
+                        cookieBanner.classList.remove("hidden"); // Mostrar el banner si no hay decisión
+                    }
+                
+                    // Función para guardar la decisión y ocultar el banner
+                    function setCookieConsent(consent) {
+                        console.log("Guardando preferencia de cookies:", consent);
+                        localStorage.setItem("cookie-preference", consent); // Guardar la preferencia
+                        cookieBanner.classList.add("hidden"); // Ocultar el banner inmediatamente
+                    }
+                
+                    // Verificamos si los botones existen antes de agregar los eventos
+                    if (acceptButton && rejectButton) {
+                        console.log("Botones encontrados correctamente.");
+                
+                        // Evento para aceptar las cookies
+                        acceptButton.addEventListener("click", function () {
+                            console.log("Botón de aceptar clickeado.");
+                            setCookieConsent("accepted"); // Guardar como "aceptado"
+                        });
+                
+                        // Evento para rechazar las cookies
+                        rejectButton.addEventListener("click", function () {
+                            console.log("Botón de rechazar clickeado.");
+                            setCookieConsent("rejected"); // Guardar como "rechazado"
+                        });
+                    } else {
+                        console.log("Los botones no se encontraron.");
+                    }
                 });
-            
-                // Evento para rechazar las cookies
-                rejectButton.addEventListener("click", function () {
-                    setCookieConsent("rejected"); // Guardar como "rechazado"
-                });
-            });
+                
             
