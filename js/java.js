@@ -57,7 +57,6 @@ window.addEventListener("load", function () {
     const categories = document.querySelectorAll('.category');
     let delay = 500;
 
-<<<<<<< HEAD
     // --- Política de Cookies ---
     const cookieBanner = document.getElementById('cookie-banner'); // Corregido: cookie-consent -> cookie-banner
     const acceptButton = document.getElementById('accept-cookies');
@@ -100,41 +99,6 @@ window.addEventListener("load", function () {
         cookieBanner.style.display = 'none';
         console.log("Cookies rechazadas");
         // Aquí puedes desactivar cookies no esenciales
-=======
-    categories.forEach((category, index) => {
-        setTimeout(() => {
-            category.classList.add('active');
-        }, delay);
-        delay += 500; // Agrega un retraso de 500ms entre cada categoría
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const cookieConsent = document.getElementById('cookie-consent');
-        const acceptButton = document.getElementById('accept-cookies');
-        const rejectButton = document.getElementById('reject-cookies');
-    
-        // Comprobar si el usuario ya ha aceptado o rechazado las cookies
-        const cookiePreference = localStorage.getItem('cookiePreference');
-    
-        if (!cookiePreference) {
-            // Si no hay preferencia guardada, mostrar el aviso
-            cookieConsent.style.display = 'block';
-        }
-    
-        // Aceptar cookies
-        acceptButton.addEventListener('click', function () {
-            localStorage.setItem('cookiePreference', 'accepted');
-            cookieConsent.style.display = 'none';
-            // Aquí puedes agregar código para activar cookies de seguimiento (por ejemplo, Google Analytics)
-        });
-    
-        // Rechazar cookies
-        rejectButton.addEventListener('click', function () {
-            localStorage.setItem('cookiePreference', 'rejected');
-            cookieConsent.style.display = 'none';
-            // Aquí puedes desactivar cookies no esenciales
-        });
->>>>>>> 736aaf7c339b045f645df9700998963cd418a4eb
     });
 
     // --- Funcionalidad de Búsqueda ---
