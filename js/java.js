@@ -64,43 +64,32 @@ window.addEventListener("load", function () {
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
     document.addEventListener("DOMContentLoaded", function () {
-
-// Verificamos si el usuario ya aceptó las cookies
-    if (localStorage.getItem("cookies-accepted") === "true") {
-        document.getElementById("cookie-banner").style.display = "none";
-    } else {
-        document.getElementById("cookie-banner").style.display = "block";
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        const cookieBanner = document.getElementById("cookie-banner");
-        const acceptButton = document.getElementById("accept-cookies");
-        const rejectButton = document.getElementById("reject-cookies");
-// Función para ocultar el banner y guardar la decisión
-    function setCookieConsent(consent) {
-        localStorage.setItem("cookie-consent", consent);
-        cookieBanner.style.display = "none";
-    }
-// Eventos de botones
-    acceptButton.addEventListener("click", function () {
-        setCookieConsent("accepted");
-    });
-    rejectButton.addEventListener("click", function () {
-        setCookieConsent("rejected");
-    });           
-     // Si acepta las cookies
-    acceptButton.addEventListener("click", function () {
-        localStorage.setItem("cookie-preference", "accepted"); // Guardar en localStorage
-        cookieBanner.style.display = "none"; // Ocultar el banner
-    });
-
-    // Si rechaza las cookies
-    rejectButton.addEventListener("click", function () {
-        localStorage.setItem("cookie-preference", "rejected"); // Guardar en localStorage
-        cookieBanner.style.display = "none"; // Ocultar el banner
-    });
-
-// Verificar si ya hay una decisión
-    if (localStorage.getItem("cookie-consent")) {
-        cookieBanner.style.display = "none";
-    }
-});
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookie-banner");
+            const acceptButton = document.getElementById("accept-cookies");
+            const rejectButton = document.getElementById("reject-cookies");
+        
+            // Verificar si el usuario ya aceptó o rechazó las cookies
+            if (localStorage.getItem("cookie-preference")) {
+                cookieBanner.style.display = "none"; // Ocultar el banner si ya hay una decisión
+            } else {
+                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
+            }
+        
+            // Función para guardar la decisión y ocultar el banner
+            function setCookieConsent(consent) {
+                localStorage.setItem("cookie-preference", consent);
+                cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
+            }
+        
+            // Evento para aceptar las cookies
+            acceptButton.addEventListener("click", function () {
+                setCookieConsent("accepted"); // Guardar como "aceptado"
+            });
+        
+            // Evento para rechazar las cookies
+            rejectButton.addEventListener("click", function () {
+                setCookieConsent("rejected"); // Guardar como "rechazado"
+            });
+        });
+        
