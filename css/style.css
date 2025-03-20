@@ -206,14 +206,6 @@ footer img {
     flex-direction: column;
     font-family: Arial, sans-serif;
 }
-.cookie-container p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-.cookie-container a {
-    color: #4da6ff;
-    text-decoration: underline;
-}
 .cookie-buttons {
     display: flex;
     justify-content: space-between;
@@ -233,9 +225,6 @@ footer img {
 .reject {
     background-color: #d9534f;
     color: white;
-}
-.cookie-btn:hover {
-    opacity: 0.8;
 }
 @media screen and (max-width: 480px) {
     header {
