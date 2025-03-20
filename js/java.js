@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    // Verificar si el DOM se cargó correctamente
+    // Verifica si el DOM se ha cargado correctamente
     console.log("DOM completamente cargado");
 
     const cookieConsent = document.getElementById('cookie-consent');
