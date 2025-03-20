@@ -68,28 +68,35 @@ window.addEventListener("load", function () {
             const cookieBanner = document.getElementById("cookie-banner");
             const acceptButton = document.getElementById("accept-cookies");
             const rejectButton = document.getElementById("reject-cookies");
-        
-            // Verificar si el usuario ya aceptó o rechazó las cookies
-            if (localStorage.getItem("cookie-preference")) {
-                cookieBanner.style.display = "none"; // Ocultar el banner si ya hay una decisión
-            } else {
-                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
-            }
-        
-            // Función para guardar la decisión y ocultar el banner
-            function setCookieConsent(consent) {
-                localStorage.setItem("cookie-preference", consent);
-                cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
-            }
-        
-            // Evento para aceptar las cookies
-            acceptButton.addEventListener("click", function () {
-                setCookieConsent("accepted"); // Guardar como "aceptado"
+            document.addEventListener("DOMContentLoaded", function () {
+                const cookieBanner = document.getElementById("cookie-banner");
+                const acceptButton = document.getElementById("accept-cookies");
+                const rejectButton = document.getElementById("reject-cookies");
+            
+                // Verificar si el usuario ya aceptó o rechazó las cookies
+                if (localStorage.getItem("cookie-preference")) {
+                    console.log("Preferencia de cookies encontrada:", localStorage.getItem("cookie-preference"));
+                    cookieBanner.style.display = "none"; // Ocultar el banner si ya hay una decisión
+                } else {
+                    console.log("No se ha encontrado preferencia de cookies, mostrando banner.");
+                    cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
+                }
+            
+                // Función para guardar la decisión y ocultar el banner
+                function setCookieConsent(consent) {
+                    console.log("Guardando preferencia de cookies:", consent);
+                    localStorage.setItem("cookie-preference", consent);
+                    cookieBanner.style.display = "none"; // Ocultar el banner inmediatamente
+                }
+            
+                // Evento para aceptar las cookies
+                acceptButton.addEventListener("click", function () {
+                    setCookieConsent("accepted"); // Guardar como "aceptado"
+                });
+            
+                // Evento para rechazar las cookies
+                rejectButton.addEventListener("click", function () {
+                    setCookieConsent("rejected"); // Guardar como "rechazado"
+                });
             });
-        
-            // Evento para rechazar las cookies
-            rejectButton.addEventListener("click", function () {
-                setCookieConsent("rejected"); // Guardar como "rechazado"
-            });
-        });
-        
+            
