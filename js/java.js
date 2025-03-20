@@ -63,17 +63,18 @@ window.addEventListener("load", function () {
         }, delay);
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
-    // Función para aceptar las cookies
-    function acceptCookies() {
-        // Ocultamos el banner
-        document.getElementById('cookie-banner').style.display = 'none';
-
-        // Guardamos en el almacenamiento local que el usuario aceptó las cookies
-        localStorage.setItem('cookies-accepted', 'true');
-    }
-
-    // Verificamos si el usuario ya aceptó las cookies
-    if (localStorage.getItem('cookies-accepted') === 'true') {
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-});
+    document.addEventListener("DOMContentLoaded", function () {
+        // Verificamos si el usuario ya aceptó las cookies
+        if (localStorage.getItem("cookies-accepted") === "true") {
+            document.getElementById("cookie-banner").style.display = "none";
+        } else {
+            document.getElementById("cookie-banner").style.display = "block";
+        }
+    
+        // Función para aceptar las cookies
+        document.getElementById("accept-cookies").addEventListener("click", function () {
+            document.getElementById("cookie-banner").style.display = "none";
+            localStorage.setItem("cookies-accepted", "true");
+        });
+    });
+    
