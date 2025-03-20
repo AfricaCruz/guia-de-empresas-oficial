@@ -64,28 +64,39 @@ window.addEventListener("load", function () {
         delay += 500; // Agrega un retraso de 500ms entre cada categoría
     });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const cookieBanner = document.getElementById("cookie-banner");
-            const acceptButton = document.getElementById("accept-cookies");
-            const rejectButton = document.getElementById("reject-cookies");
-
-            // Verificar si el usuario ya tomó una decisión
-            if (!localStorage.getItem("cookie-consent")) {
-                cookieBanner.style.display = "block"; // Mostrar el banner si no hay decisión
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("✅ Script de cookies cargado correctamente.");
+    
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptButton = document.getElementById("accept-cookies");
+        const rejectButton = document.getElementById("reject-cookies");
+    
+        if (!cookieBanner || !acceptButton || !rejectButton) {
+            console.error("❌ Error: No se encontraron los elementos del banner de cookies.");
+            return;
+        }
+    
+        console.log("🎯 Elementos encontrados correctamente.");
+    
+        try {
+            const consent = localStorage.getItem("cookie-consent");
+            console.log("📌 Estado actual del consentimiento:", consent);
+    
+            if (!consent) {
+                cookieBanner.style.display = "block";
             }
-
-            // Función para ocultar el banner y guardar la decisión
-            function setCookieConsent(consent) {
-                localStorage.setItem("cookie-consent", consent);
+    
+            function setCookieConsent(consentValue) {
+                console.log("✅ Consentimiento establecido en:", consentValue);
+                localStorage.setItem("cookie-consent", consentValue);
                 cookieBanner.style.display = "none";
             }
-
-            // Eventos de botones
-            acceptButton.addEventListener("click", function () {
-                setCookieConsent("accepted");
-            });
-
-            rejectButton.addEventListener("click", function () {
-                setCookieConsent("rejected");
-            });
-        });
+    
+            acceptButton.addEventListener("click", () => setCookieConsent("accepted"));
+            rejectButton.addEventListener("click", () => setCookieConsent("rejected"));
+    
+        } catch (error) {
+            console.warn("⚠️ LocalStorage no está disponible. No se puede guardar la preferencia de cookies.", error);
+        }
+    });
+    

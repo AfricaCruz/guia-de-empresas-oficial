@@ -202,23 +202,28 @@ footer img {
     width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
+    display: none; /* Se mostrará con JavaScript */
     flex-direction: column;
     font-family: Arial, sans-serif;
+    z-index: 1000; /* Para asegurarse de que está por encima de otros elementos */
 }
+
 .cookie-container p {
     margin: 5px 0;
     font-size: 14px;
 }
+
 .cookie-container a {
     color: #4da6ff;
     text-decoration: underline;
 }
+
 .cookie-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
+
 .cookie-btn {
     padding: 8px 15px;
     border: none;
@@ -226,14 +231,17 @@ footer img {
     cursor: pointer;
     font-weight: bold;
 }
+
 .accept {
     background-color: #4CAF50;
     color: white;
 }
+
 .reject {
     background-color: #d9534f;
     color: white;
 }
+
 .cookie-btn:hover {
     opacity: 0.8;
 }
