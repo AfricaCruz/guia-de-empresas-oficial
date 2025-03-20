@@ -70,11 +70,28 @@ window.addEventListener("load", function () {
         } else {
             document.getElementById("cookie-banner").style.display = "block";
         }
-    
-        // Función para aceptar las cookies
-        document.getElementById("accept-cookies").addEventListener("click", function () {
-            document.getElementById("cookie-banner").style.display = "none";
-            localStorage.setItem("cookies-accepted", "true");
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookie-banner");
+            const acceptButton = document.getElementById("accept-cookies");
+            const rejectButton = document.getElementById("reject-cookies");
+        
+            // Función para ocultar el banner y guardar la decisión
+            function setCookieConsent(consent) {
+                localStorage.setItem("cookie-consent", consent);
+                cookieBanner.style.display = "none";
+            }
+        
+            // Eventos de botones
+            acceptButton.addEventListener("click", function () {
+                setCookieConsent("accepted");
+            });
+        
+            rejectButton.addEventListener("click", function () {
+                setCookieConsent("rejected");
+            });
+        
+            // Verificar si ya hay una decisión
+            if (localStorage.getItem("cookie-consent")) {
+                cookieBanner.style.display = "none";
+            }
         });
-    });
-    
