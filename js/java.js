@@ -88,31 +88,21 @@ window.addEventListener("load", function () {
                         cookieBanner.classList.remove("hidden"); // Mostrar el banner si no hay decisión
                     }
                 
-                    // Función para guardar la decisión y ocultar el banner
-                    function setCookieConsent(consent) {
-                        console.log("Guardando preferencia de cookies:", consent);
-                        localStorage.setItem("cookie-preference", consent); // Guardar la preferencia
-                        cookieBanner.classList.add("hidden"); // Ocultar el banner inmediatamente
-                    }
-                
-                    // Verificamos si los botones existen antes de agregar los eventos
-                    if (acceptButton && rejectButton) {
-                        console.log("Botones encontrados correctamente.");
-                
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var cookieConsent = document.getElementById('cookieConsent');
+                        var acceptCookies = document.getElementById('acceptCookies');
+                      
+                        // Verificar si ya se ha aceptado las cookies
+                        if (localStorage.getItem('cookiesAccepted')) {
+                          cookieConsent.style.display = 'none';
+                        }
+                      
                         // Evento para aceptar las cookies
-                        acceptButton.addEventListener("click", function () {
-                            console.log("Botón de aceptar clickeado.");
-                            setCookieConsent("accepted"); // Guardar como "aceptado"
+                        acceptCookies.addEventListener('click', function () {
+                          localStorage.setItem('cookiesAccepted', 'true');
+                          cookieConsent.style.display = 'none';
                         });
-                
-                        // Evento para rechazar las cookies
-                        rejectButton.addEventListener("click", function () {
-                            console.log("Botón de rechazar clickeado.");
-                            setCookieConsent("rejected"); // Guardar como "rechazado"
-                        });
-                    } else {
-                        console.log("Los botones no se encontraron.");
-                    }
-                });
+                      });
+                      
                 
             
