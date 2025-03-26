@@ -27,6 +27,7 @@ main {
     margin: 0 auto;
     padding: 2rem;
 }
+
 .breadcrumb {
     list-style: none;
     display: flex;
