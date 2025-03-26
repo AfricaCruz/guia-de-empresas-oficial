@@ -166,6 +166,26 @@ footer img {
     height: 50px;
     object-fit: cover;
 }
+/* Estilo para el botón */
+.back-to-top {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espacio desde el contenido */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color cuando el cursor pasa sobre el botón */
+}
+
 @media screen and (max-width: 480px) {
     body {
         margin: 0;
