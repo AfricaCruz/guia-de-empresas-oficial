@@ -229,7 +229,15 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
     }
+<<<<<<< HEAD
     * Estilos para la tabla manteniendo forma y colores */
+=======
+<<<<<<< HEAD
+    .button {
+        margin-bottom: 20px; /* Espacio debajo del botón */
+=======
+/* Estilos para la tabla en móviles */
+>>>>>>> b54ce9781c3c57de3c4686194939df48ca43b98d
     .right-details table {
         width: 100%;
         border-collapse: collapse; /* Mantenemos la forma original */
@@ -271,6 +279,7 @@ footer img {
     .right-details {
         flex: none;
         width: 100%;
+>>>>>>> 097839ad24248559acbaccdc96f5f34b8b69160b
     }
 
     /* Opcional: reducimos el tamaño de la fuente para que quepa mejor */
