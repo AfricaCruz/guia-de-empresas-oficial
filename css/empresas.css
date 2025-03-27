@@ -229,7 +229,71 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
     }
+<<<<<<< HEAD
     .button {
         margin-bottom: 20px; /* Espacio debajo del botón */
+=======
+/* Estilos para la tabla en móviles */
+    .right-details table {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    .right-details thead {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .right-details tbody {
+        display: block;
+    }
+
+    .right-details tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .right-details td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        background-color: transparent;
+    }
+
+    .right-details td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 8px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        color: #2e3643;
+    }
+
+    .right-details th {
+        display: none; /* Ocultamos los encabezados en móvil */
+    }
+
+    /* Ajustamos el contenedor de detalles */
+    .details-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .left-details,
+    .right-details {
+        flex: none;
+        width: 100%;
+>>>>>>> 097839ad24248559acbaccdc96f5f34b8b69160b
     }
 }
