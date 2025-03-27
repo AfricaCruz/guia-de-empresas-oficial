@@ -251,6 +251,9 @@ footer img {
         display: inline;
 
     }
+    .solicitud {
+        margin-left:auto; /* Mueve el enlace 20px a la derecha */
+    }
 
     footer img {
         content: url("../footer-mob.webp"); /* Imagen específica para móviles */
