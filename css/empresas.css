@@ -229,4 +229,65 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+    * Estilos para la tabla manteniendo forma y colores */
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7a3eb15634a07b6f62ec4fe95eb7177fd8518571
+    .button {
+        margin-bottom: 20px; /* Espacio debajo del botón */
+
+/* Estilos para la tabla en móviles */
+>>>>>>> b54ce9781c3c57de3c4686194939df48ca43b98d
+    .right-details table {
+        width: 100%;
+        border-collapse: collapse; /* Mantenemos la forma original */
+    }
+
+    .right-details thead {
+        display: table-header-group; /* Mantenemos visible el thead */
+    }
+
+    .right-details th {
+        display: table-cell;
+        padding: 5px;
+        border: 1px solid #ddd;
+        background-color: #2e3643; /* Color original */
+        color: #ffffff; /* Color original */
+        font-size: 0.8rem; /* Reducimos un poco el tamaño */
+    }
+
+    .right-details td {
+        display: table-cell;
+        padding: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9; /* Color original */
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .right-details tr {
+        display: table-row; /* Mantenemos la estructura de filas */
+    }
+
+    /* Ajustamos el contenedor para pantallas pequeñas */
+    .details-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .left-details,
+    .right-details {
+        flex: none;
+        width: 100%;
+>>>>>>> 097839ad24248559acbaccdc96f5f34b8b69160b
+    }
+
+    /* Opcional: reducimos el tamaño de la fuente para que quepa mejor */
+    .right-details table {
+        font-size: 0.9rem;
+    }
 }
