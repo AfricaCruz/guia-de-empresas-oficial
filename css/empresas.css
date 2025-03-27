@@ -206,6 +206,11 @@ footer img {
     .image-slider {
         aspect-ratio: 4/3;
     }
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.3rem;
+    }
     footer {
         text-align: center;
         background-color: white;
