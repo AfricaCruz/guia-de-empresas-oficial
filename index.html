@@ -13,7 +13,13 @@
 </head>
 <body>
    <header>
-    
+    <div class="search-bar">
+        <form action="buscar.html" method="get" onsubmit="return false;">
+
+            <input type="text" id="search" placeholder="Búsqueda por sectores..." onkeyup="searchCategories()">
+            <button type="submit" value=""><i class="fas fa-search"></i></button>
+        </form>
+    </div>
    </header>
     <nav>
         <ul class="menu">
@@ -37,7 +43,9 @@
                     <li><a href="categorias/sanidad.html">Sanidad</a></li>
                     <li><a href="categorias/servicios.html">Servicios</a></li>
                 </ul>
+                <li> <a href="quienesomos.html"class="menu-item">¿Quienes Somos?</a></li>
                 <li><a href="formulario/formularioalta.html" class="menu-item">Solicitud de alta</a></li>
+                
             </li>
         </ul>
     </nav>
