@@ -203,6 +203,14 @@ footer img {
     .business-details {
         padding: 1.5rem;
     }
+    .details-container {
+        display: block; /* Cambio aplicado: apila los elementos verticalmente */
+    }
+    .left-details,
+    .right-details {
+        flex: none; /* Cambio aplicado: elimina la división en columnas */
+        width: 100%; /* Cambio aplicado: ocupa todo el ancho */
+    }
     .image-slider {
         aspect-ratio: 4/3;
     }
@@ -235,4 +243,3 @@ footer img {
         padding: 12px 0; /* Ajustar el tamaño para pantallas pequeñas */
     }
 }
-
