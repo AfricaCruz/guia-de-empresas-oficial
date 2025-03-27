@@ -235,6 +235,9 @@ footer img {
         position: static;
     }
     .button {
-        margin-bottom: 20px; /* Espacio debajo del botón */
+        margin-bottom: 40px; /* Asegurarse que haya suficiente espacio debajo */
+        width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+        padding: 12px 0; /* Ajustar el tamaño para pantallas pequeñas */
     }
 }
+
