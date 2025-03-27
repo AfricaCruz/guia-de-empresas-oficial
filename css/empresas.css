@@ -229,58 +229,39 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
     }
-/* Estilos para la tabla en móviles */
+    * Estilos para la tabla manteniendo forma y colores */
     .right-details table {
-        display: block;
         width: 100%;
-        border: none;
+        border-collapse: collapse; /* Mantenemos la forma original */
     }
 
     .right-details thead {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    .right-details tbody {
-        display: block;
-    }
-
-    .right-details tr {
-        display: block;
-        margin-bottom: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
-
-    .right-details td {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 8px;
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        background-color: transparent;
-    }
-
-    .right-details td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 8px;
-        width: 45%;
-        padding-right: 10px;
-        font-weight: bold;
-        color: #2e3643;
+        display: table-header-group; /* Mantenemos visible el thead */
     }
 
     .right-details th {
-        display: none; /* Ocultamos los encabezados en móvil */
+        display: table-cell;
+        padding: 5px;
+        border: 1px solid #ddd;
+        background-color: #2e3643; /* Color original */
+        color: #ffffff; /* Color original */
+        font-size: 0.8rem; /* Reducimos un poco el tamaño */
     }
 
-    /* Ajustamos el contenedor de detalles */
+    .right-details td {
+        display: table-cell;
+        padding: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9; /* Color original */
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .right-details tr {
+        display: table-row; /* Mantenemos la estructura de filas */
+    }
+
+    /* Ajustamos el contenedor para pantallas pequeñas */
     .details-container {
         flex-direction: column;
         gap: 1.5rem;
@@ -290,5 +271,10 @@ footer img {
     .right-details {
         flex: none;
         width: 100%;
+    }
+
+    /* Opcional: reducimos el tamaño de la fuente para que quepa mejor */
+    .right-details table {
+        font-size: 0.9rem;
     }
 }
