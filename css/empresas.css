@@ -262,4 +262,10 @@ footer img {
         object-fit: contain;
         position: static;
     }
+    .button {
+        margin-bottom: 20px; /* Asegurarse que haya suficiente espacio debajo */
+        width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+        padding: 12px 0; /* Ajustar el tamaño para pantallas pequeñas */
+    }
+}
 }
