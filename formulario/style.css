@@ -139,6 +139,24 @@ footer img {
     margin-left: 5px;
     color: #333;
 }
+.button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+.back-button {
+    background: #007acc;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.back-button:hover {
+    background: #0056b3;
+  
+}
 
 
    
