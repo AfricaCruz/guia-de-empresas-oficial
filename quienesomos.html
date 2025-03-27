@@ -41,15 +41,14 @@
             font-size: 22px;
             text-align: center;
         }
-        p{
+        p {
             font-size: 17px;
             line-height: 1.6;
             font-style: italic;
         }
-        li{
+        li {
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
            font-size: 18px;
-        
         }
         .benefits {
             display: flex;
@@ -78,13 +77,30 @@
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .back-button {
+            background: #007acc;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background: #0056b3;
+          
+        }
     </style>
 </head>
 <body>
     <header>
         Guía de Empresas - Conectando Negocios
     </header>
-    
     <section>
         <h2>Sobre Nosotros</h2>
         <p>Somos una plataforma dedicada a impulsar la visibilidad de los comercios y empresas locales. Nuestro compromiso es brindar una guía confiable y accesible para que el usuario encuentre fácilmente los mejores servicios y negocios cercanos.</p>
@@ -115,5 +131,10 @@
             </div>
         </div>
     </section>
+    <div class="button-container">
+        <button class="back-button" onclick="window.history.back()">Volver al Inicio</button>
+    </div> 
+    
+  
 </body>
 </html>
