@@ -229,4 +229,7 @@ footer img {
         object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
         position: static;
     }
+    .button {
+        margin-bottom: 20px; /* Espacio debajo del botón */
+    }
 }
