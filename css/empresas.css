@@ -119,7 +119,9 @@ main {
 .right-details td {
     background-color: #f9f9f9;
 }
-
+.red-asterisk {
+    color: red;
+}
 .image-slider {
     position: relative;
     width: 100%;
