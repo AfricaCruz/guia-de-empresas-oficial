@@ -13,99 +13,112 @@
 </head>
 <body>
    <header>
-   </header>
-   <nav>
-       <ul class="menu">
-           <li><a href="http://laguardiadejaen.com/" target="_blank" class="menu-item">Ayuntamiento</a></li>
-           <li class="menu-item dropdown">
-               <a href="#" class="menu-item">Sectores <i class="fas fa-caret-down"></i></a>
-               <ul class="dropdown-menu">
-                   <li><a href="categorias/administracion.html">Administración</a></li>
-                   <li><a href="categorias/agricultura.html">Agricultura</a></li>
-                   <li><a href="categorias/comercio.html">Comercio</a></li>
-                   <li><a href="categorias/construccion.html">Construcción</a></li>
-                   <li><a href="categorias/educacion.html">Educación</a></li>
-                   <li><a href="categorias/energias.html">Energía</a></li>
-                   <li><a href="categorias/hosteleria.html">Hostelería</a></li>
-                   <li><a href="categorias/industria.html">Industria</a></li>
-                   <li><a href="categorias/logistica.html">Logística</a></li>
-                   <li><a href="categorias/ocio.html">Ocio</a></li>
-                   <li><a href="categorias/sanidad.html">Sanidad</a></li>
-                   <li><a href="categorias/servicios.html">Servicios</a></li>
-               </ul>
-           </li>
-           <li><a href="quienesomos.html" class="menu-item">¿Quiénes Somos?</a></li>
-           <li><a href="formulario/formularioalta.html" class="solicitud">Solicitud de alta</a></li>
-       </ul>
-   </nav>
-   <main>
-       <h2>LISTADO DE SECTORES</h2>
-       <div class="category-grid">
-           <a href="categorias/administracion.html" class="category-item">
-               <i class="fas fa-building category-icon" style="color: #5994c7;"></i>
-               <h2>Administración</h2>
-           </a>
-           <a href="categorias/agricultura.html" class="category-item">
-               <i class="fas fa-tractor category-icon" style="color: #fbe242;"></i>
-               <h2>Agricultura</h2>
-           </a>
-           <a href="categorias/comercio.html" class="category-item">
-               <i class="fas fa-shopping-cart category-icon" style="color: rgb(240, 88, 88);"></i>
-               <h2>Comercio</h2>
-           </a>
-           <a href="categorias/construccion.html" class="category-item">
-               <i class="fas fa-hammer category-icon" style="color: #fab942;"></i>
-               <h2>Construcción</h2>
-           </a>
-           <a href="categorias/educacion.html" class="category-item">
-               <i class="fas fa-graduation-cap category-icon" style="color: rgba(36, 36, 36, 0.795);"></i>
-               <h2>Educación</h2>
-           </a>
-           <a href="categorias/energias.html" class="category-item">
-               <i class="fas fa-seedling category-icon" style="color: #4ad075;"></i>
-               <h2>Energía</h2>
-           </a>
-           <a href="categorias/hosteleria.html" class="category-item">
-               <i class="fas fa-utensils category-icon" style="color: #bea74b;"></i>
-               <h2>Hostelería</h2>
-           </a>
-           <a href="categorias/industria.html" class="category-item">
-               <i class="fas fa-industry category-icon" style="color: #7feb37;"></i>
-               <h2>Industria</h2>
-           </a>
-           <a href="categorias/logistica.html" class="category-item">
-               <i class="fas fa-truck category-icon" style="color: #ba7633;"></i>
-               <h2>Logística</h2>
-           </a>
-           <a href="categorias/ocio.html" class="category-item">
-               <i class="fas fa-glass-cheers category-icon" style="color: #cf44f1;"></i>
-               <h2>Ocio</h2>
-           </a>
-           <a href="categorias/sanidad.html" class="category-item">
-               <i class="fas fa-heartbeat category-icon" style="color: #f74e78;"></i>
-               <h2>Sanidad</h2>
-           </a>
-           <a href="categorias/servicios.html" class="category-item">
-               <i class="fa-solid fa-users category-icon" style="color: #4fa6feea;"></i>
-               <h2>Servicios</h2>
-           </a>
-       </div>
+    <div class="search-bar">
+        <form action="buscar.html" method="get" onsubmit="return false;">
+
+            <input type="text" id="search" placeholder="Búsqueda por sectores..." onkeyup="searchCategories()" >
+            <button type="submit" value=""><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</header>
+<nav>
+    <ul class="menu">
+        <!-- Pestaña de inicio -->
+        <li><a href="http://laguardiadejaen.com/" target="_blank" class="menu-item">Ayuntamiento</a></li>
+
+        <!-- Pestaña de categorías (Desplegable) -->
+        <li class="menu-item dropdown">
+            <a href="#" class="menu-item">Sectores <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="categorias/administracion.html">Administración</a></li>
+                <li><a href="categorias/agricultura.html">Agricultura</a></li>
+                <li><a href="categorias/comercio.html">Comercio</a></li>
+                <li><a href="categorias/construccion.html">Construcción</a></li>
+                <li><a href="categorias/educacion.html">Educación</a></li>
+                <li><a href="categorias/energias.html">Energía</a></li>
+                <li><a href="categorias/hosteleria.html">Hostelería</a></li>
+                <li><a href="categorias/industria.html">Industria</a></li>
+                <li><a href="categorias/logistica.html">Logística</a></li>
+                <li><a href="categorias/ocio.html">Ocio</a></li>
+                <li><a href="categorias/sanidad.html">Sanidad</a></li>
+                <li><a href="categorias/servicios.html">Servicios</a></li>
+            </ul>
+        </li>
+
+        <!-- Pestañas fuera del desplegable -->
+        <li><a href="quienesomos.html" class="menu-item">¿Quiénes Somos?</a></li>
+        <li><a href="formulario/formularioalta.html" class="solicitud">Solicitud de alta</a></li>
+    </ul>
+</nav>
+<main>
+    <h2>LISTADO DE SECTORES</h2>
+    <div class="category-grid">
+        <a href="categorias/administracion.html" class="category-item">
+            <i class="fas fa-building category-icon" style="color: #5994c7;"></i>
+            <h2>Administración</h2>
+        </a>
+        <a href="categorias/agricultura.html" class="category-item">
+            <i class="fas fa-tractor category-icon" style="color: #fbe242;"></i>
+            <h2>Agricultura</h2>
+        </a>
+        <a href="categorias/comercio.html" class="category-item">
+            <i class="fas fa-shopping-cart category-icon" style="color: rgb(240, 88, 88);"></i>
+            <h2>Comercio</h2>
+        </a>
+        <a href="categorias/construccion.html" class="category-item">
+            <i class="fas fa-hammer category-icon" style="color: #fab942;"></i>
+            <h2>Construcción</h2>
+        </a>
+        <a href="categorias/educacion.html" class="category-item">
+            <i class="fas fa-graduation-cap category-icon" style="color: rgba(36, 36, 36, 0.795);"></i>
+            <h2>Educación</h2>
+        </a>
+        <a href="categorias/energias.html" class="category-item">
+            <i class="fas fa-seedling category-icon" style="color: #4ad075;"></i>
+            <h2>Energía</h2>
+        </a>
+        <a href="categorias/hosteleria.html" class="category-item">
+            <i class="fas fa-utensils category-icon" style="color: #bea74b;"></i>
+            <h2>Hostelería</h2>
+        </a>
+        <a href="categorias/industria.html" class="category-item">
+            <i class="fas fa-industry category-icon" style="color: #7feb37;"></i>
+            <h2>Industria</h2>
+        </a>
+        <a href="categorias/logistica.html" class="category-item">
+            <i class="fas fa-truck category-icon" style="color: #ba7633;"></i>
+            <h2>Logística</h2>
+        </a>
+        <a href="categorias/ocio.html" class="category-item">
+            <i class="fas fa-glass-cheers category-icon" style="color: #cf44f1;"></i>
+            <h2>Ocio</h2>
+        </a>
+        <a href="categorias/sanidad.html" class="category-item">
+            <i class="fas fa-heartbeat category-icon" style="color: #f74e78;"></i>
+            <h2>Sanidad</h2>
+        </a>
+        <a href="categorias/servicios.html" class="category-item">
+            <i class="fa-solid fa-users category-icon" style="color: #4fa6feea;"></i>
+            <h2>Servicios</h2>
+        </a>
+    </div>
    </main>
    <footer>
-       <p>© 2025 Ayuntamiento de La Guardia de Jaén.</p>
-       <img src="Escudos Programa de Empleo 2024 Fondo Blanco.png" alt="Descripción de la imagen">
-   </footer>
-   <div id="cookie-banner" class="cookie-container">
-       <div class="cookie-content">
-           <p><i class="fas fa-cookie-bite"></i> <strong>Utilizamos cookies</strong></p>
-           <p>Usamos cookies para mejorar su experiencia de navegación en nuestra web, para mostrarle contenidos personalizados y para analizar el tráfico en nuestra web.  
-           <a href="politicas_cookies.html" target="_blank">Ver política de cookies</a>.</p>
-           <div class="cookie-buttons">
-               <button id="accept-cookies" class="cookie-btn accept">Aceptar</button>
-               <button id="reject-cookies" class="cookie-btn reject">Rechazar</button>
-           </div>
-       </div>
-   </div>
+        <p>&copy; 2025 Ayuntamiento de La Guardia de Jaén.</p>
+        <img src="Escudos Programa de Empleo 2024 Fondo Blanco.png" alt="Descripción de la imagen">
+    </footer>
+<!-- Banner de Cookies Mejorado -->
+<div id="cookie-banner" class="cookie-container">
+    <div class="cookie-content">
+        <p><i class="fas fa-cookie-bite"></i> <strong>Utilizamos cookies</strong></p>
+        <p>Usamos cookies para mejorar su experiencia de navegación en nuestra web, para mostrarle contenidos personalizados y para analizar el tráfico en nuestra web.  
+        <a href="politicas_cookies.html" target="_blank">Ver política de cookies</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn accept">Aceptar</button>
+            <button id="reject-cookies" class="cookie-btn reject">Rechazar</button>
+        </div>
+    </div>
+</div>
    <script src="js/java.js"></script>
 </body>
 </html>
