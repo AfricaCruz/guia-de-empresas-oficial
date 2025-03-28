@@ -43,7 +43,6 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
     align-items: center; /* Alinea verticalmente los elementos */
     background-color: white;
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan a otra línea */
