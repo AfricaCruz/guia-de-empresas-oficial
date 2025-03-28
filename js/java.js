@@ -15,20 +15,22 @@ const webLink = document.getElementById('company-web');
 if (webLink) {
     webLink.textContent = webLink.href;
 }
+/*
+    // Buscador index principal
+    function searchCategories() {
+        let input = document.getElementById('search').value.toLowerCase();
+        let items = document.querySelectorAll('.category-item');
 
-// Buscador index principal
-function searchCategories() {
-    let input = document.getElementById('search').value.toLowerCase();
-    let items = document.querySelectorAll('.category-item');
+        items.forEach(item => {
+            let text = item.innerText.toLowerCase();
+            item.style.display = text.includes(input) ? "flex" : "none";
+            if (text.includes(input)) {
+                item.style.flexDirection = "column"; // Asegura que se vea bien
+            }
+        });
+    }
+*/
 
-    items.forEach(item => {
-        let text = item.innerText.toLowerCase();
-        item.style.display = text.includes(input) ? "flex" : "none";
-        if (text.includes(input)) {
-            item.style.flexDirection = "column"; // Asegura que se vea bien
-        }
-    });
-}
 
 // Buscador diferentes categorías
 function searchBusinesses() {
