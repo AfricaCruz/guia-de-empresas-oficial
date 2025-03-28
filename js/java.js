@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
     }
 
     const cookiePreference = localStorage.getItem('cookiePreference');
-    console.log("Preferencia de cookies guardada:", cookiePreference); // Verificar el valor guardado
+    console.log("Preferencia de cookies guardada:", cookiePreference);
 
     if (cookiePreference === 'accepted' || cookiePreference === 'rejected') {
         cookieBanner.style.display = 'none'; // Ocultar si ya se aceptaron/rechazaron
