@@ -125,16 +125,15 @@ footer img {
         margin: 0;
         padding: 0;
         background-image: url("fondo_movil.webp");
-      background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
+        background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
         background-position: center;  /* Centra la imagen de fondo */
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
         height: 550px;
-       
     }
     .search-bar {
         display: flex;
         justify-content: center;
-        margin-top: 18.5%;
+        margin-top: 15.8%;
     }
     .business-list {
         display: grid;
