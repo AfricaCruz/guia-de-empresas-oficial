@@ -58,14 +58,12 @@ nav ul li a {
     padding: 16px 25px;
     display: block;
 }
-/* Hover para los elementos del menú */
 nav ul li a:hover {
     background-color: #aaa;
 }
 .solicitud {
     margin-left: 615px;
 }
-/* Submenú (Categorías) */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -83,35 +81,11 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
 }
-/* Mostrar el submenú cuando se hace hover */
 .menu-item.dropdown:hover .dropdown-menu {
     display: block;
 }
-/* Flecha hacia abajo */
 .menu-item i {
     margin-left: 5px;
-}
-/* Estilos para el campo de búsqueda */
-.search-bar {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: flex-end;
-}
-.search-bar form {
-    display: flex;
-}
-.search-bar input[type="text"] {
-    padding: 7px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 200px;
-}
-.search-bar button {
-    padding: 7px 10px;
-    border: none;
-    color: #010101;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
 }
 main {
     padding: 2rem;
@@ -133,13 +107,11 @@ h2 {
     text-align: center;
     font-family: Arial, sans-serif;
 }
-/* Estilos para las categorías */
 .category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
-/* When the 'active' class is added, the category becomes visible */
 .category.active {
     opacity: 1;
     transform: translateY(0);
@@ -189,7 +161,6 @@ footer img {
     height: 50px;
     object-fit: cover;
 }
-/* Estilos para cookies */
 .cookie-container {
     position: fixed;
     bottom: 20px;
@@ -228,32 +199,32 @@ footer img {
     header {
         position: relative;
         width: 100%;
-        margin: 0; /* Elimina cualquier margen alrededor del header */
-        padding: 0; /* Elimina cualquier relleno interno */
+        margin: 0;
+        padding: 0;
         background-image: url('cabecera_movil.webp');
         background-size: cover;
-        background-position: center; /* Centra la imagen en la cabecera */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-        overflow: hidden; /* Impide el scroll en caso de recorte */
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
     body {
         margin: 0;
         padding: 0;
         background-image: url('fondo_movil.webp');
-        background-size: cover; /* Asegura que la imagen de fondo cubra toda el área */
-        background-position: center; /* Centra la imagen de fondo */
-        overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
         display: inline;
     }
     .solicitud {
-        margin-left: auto; /* Mueve el enlace a la derecha */
+        margin-left: auto;
     }
     footer img {
-        content: url("../footer-mob.webp"); /* Imagen específica para móviles */
-        max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+        content: url("../footer-mob.webp");
+        max-height: 100px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
     footer {
         text-align: center;
@@ -272,11 +243,5 @@ footer img {
         width: 100%;
         text-align: center;
         padding: 10px 0;
-    }
-    .search-bar {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center; /* Mueve el contenido a la derecha */
-        padding: 25%;
     }
 }

@@ -3,12 +3,16 @@ const images = document.querySelectorAll('.slider-image');
 let currentImage = 0;
 
 function nextImage() {
-    images[currentImage].classList.remove('active');
-    currentImage = (currentImage + 1) % images.length;
-    images[currentImage].classList.add('active');
+    if (images.length > 0) { // Solo ejecuta si hay imágenes
+        images[currentImage].classList.remove('active');
+        currentImage = (currentImage + 1) % images.length;
+        images[currentImage].classList.add('active');
+    }
 }
 
-setInterval(nextImage, 3000); // Cambia la imagen cada 3 segundos
+if (images.length > 0) {
+    setInterval(nextImage, 3000); // Cambia la imagen cada 3 segundos si hay imágenes
+}
 
 // Script para insertar el texto del enlace copiando el contenido href
 const webLink = document.getElementById('company-web');
@@ -16,21 +20,7 @@ if (webLink) {
     webLink.textContent = webLink.href;
 }
 
-// Buscador index principal
-function searchCategories() {
-    let input = document.getElementById('search').value.toLowerCase();
-    let items = document.querySelectorAll('.category-item');
-
-    items.forEach(item => {
-        let text = item.innerText.toLowerCase();
-        item.style.display = text.includes(input) ? "flex" : "none";
-        if (text.includes(input)) {
-            item.style.flexDirection = "column"; // Asegura que se vea bien
-        }
-    });
-}
-
-// Buscador diferentes categorías
+// Buscador para diferentes categorías (si se usa en otras páginas)
 function searchBusinesses() {
     let input = document.getElementById('search').value.toLowerCase();
     let businessCards = document.querySelectorAll('.business-card');
@@ -41,79 +31,42 @@ function searchBusinesses() {
     });
 }
 
-// Función debounce para optimizar el buscador y evitar múltiples ejecuciones innecesarias
-function debounce(func, delay) {
-    let timeout;
-    return function () {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func(), delay);
-    };
-}
-
-// JavaScript para añadir la clase 'active' poco a poco a cada categoría
+// Animación de categorías al cargar la página
 window.addEventListener("load", function () {
-    const categories = document.querySelectorAll('.category');
+    const categories = document.querySelectorAll('.category-item'); // Cambié '.category' por '.category-item'
     let delay = 500;
 
-    // --- Política de Cookies ---
-    const cookieBanner = document.getElementById('cookie-banner'); // Corregido: cookie-consent -> cookie-banner
+    // Añadir clase 'active' con retraso para animación
+    categories.forEach((category, index) => {
+        setTimeout(() => {
+            category.classList.add('active');
+        }, delay * index);
+    });
+
+    // Política de Cookies
+    const cookieBanner = document.getElementById('cookie-banner');
     const acceptButton = document.getElementById('accept-cookies');
     const rejectButton = document.getElementById('reject-cookies');
 
-    // Verificar si los elementos existen en el DOM
-    console.log("cookieBanner:", cookieBanner);
-    console.log("acceptButton:", acceptButton);
-    console.log("rejectButton:", rejectButton);
-
-    // Comprobar si los elementos fueron encontrados
     if (!cookieBanner || !acceptButton || !rejectButton) {
         console.error("Los elementos de consentimiento de cookies no se encuentran.");
-        return; // Salir si no se encuentran los elementos
+        return;
     }
 
-    // Comprobar si el usuario ya ha aceptado o rechazado las cookies
     const cookiePreference = localStorage.getItem('cookiePreference');
-    console.log("Preferencia de cookies guardada:", cookiePreference);
-
     if (!cookiePreference) {
-        // Si no hay preferencia guardada, mostrar el aviso
-        cookieBanner.style.display = 'flex'; // Ajustado a 'flex' para que coincida con tu CSS
+        cookieBanner.style.display = 'flex';
     } else {
-        // Si ya se ha aceptado o rechazado las cookies, no mostrar el aviso
         cookieBanner.style.display = 'none';
     }
 
-    // Aceptar cookies
     acceptButton.addEventListener('click', function () {
         localStorage.setItem('cookiePreference', 'accepted');
         cookieBanner.style.display = 'none';
-        console.log("Cookies aceptadas");
-        // Aquí puedes agregar código para activar cookies de seguimiento (por ejemplo, Google Analytics)
     });
 
-    // Rechazar cookies
     rejectButton.addEventListener('click', function () {
         localStorage.setItem('cookiePreference', 'rejected');
         cookieBanner.style.display = 'none';
-        console.log("Cookies rechazadas");
-        // Aquí puedes desactivar cookies no esenciales
     });
-
-    // --- Funcionalidad de Búsqueda ---
-    // Función para buscar categorías
-    window.searchCategories = function () {
-        const searchInput = document.getElementById('search').value.toLowerCase();
-        const categories = document.querySelectorAll('.category-item');
-
-        categories.forEach(category => {
-            const categoryName = category.querySelector('h2').textContent.toLowerCase();
-            if (categoryName.includes(searchInput)) {
-                category.style.display = 'block'; // Mostrar categoría
-                category.classList.add('active'); // Añadir clase active para animación (si es necesario)
-            } else {
-                category.style.display = 'none'; // Ocultar categoría
-                category.classList.remove('active');
-            }
-        });
-    };
 });
