@@ -40,21 +40,22 @@ form {
 /* Estilos del menú de navegación */
 nav ul {
     list-style-type: none;
-    padding: 0 30px; /* Agrega relleno a los lados para hacerlo más ancho */
+    padding: 0 30px;
     margin: 0;
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
     background-color: white;
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a otra línea */
+    flex-wrap: nowrap;
+    min-height: 50px;
 }
 nav ul li {
-    margin: 0 20px; /* Aumenta el margen entre ítems */
+    margin: 0 20px;
     position: relative;
 }
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px 25px; /* Aumenta el relleno de los enlaces */
+    padding: 10px 25px;
     display: block;
 }
 /* Hover para los elementos del menú */
