@@ -50,7 +50,7 @@ function debounce(func, delay) {
     };
 }
 
-document.getElementById('search').addEventListener('keyup', debounce(searchBusinesses, 300));
+//document.getElementById('search').addEventListener('keyup', debounce(searchBusinesses, 300));
 
 // JavaScript para añadir la clase 'active' poco a poco a cada categoría
 window.addEventListener("load", function () {
