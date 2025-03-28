@@ -62,8 +62,7 @@ nav ul li a:hover {
     background-color: #aaa;
 }
 .solicitud {
-    margin-left: auto; /* Empuja el elemento a la derecha */
-    margin-right: 0; /* Asegura que no haya margen a la derecha */
+    margin-left: 615px;
 }
 /* Submenú (Categorías) */
 .dropdown-menu {
