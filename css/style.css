@@ -16,10 +16,10 @@ header {
     color: #ffffff;
     padding: 10px 20px;
     border-bottom: 1px solid #aaa;
-    background-size:100%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    width:auto;
+    width: auto;
 }
 .logo {
     height: 140px;
@@ -40,7 +40,7 @@ form {
 /* Estilos del menú de navegación */
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 30px; /* Agrega relleno a los lados para hacerlo más ancho */
     margin: 0;
     display: flex;
     align-items: center; /* Alinea verticalmente los elementos */
@@ -48,13 +48,13 @@ nav ul {
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan a otra línea */
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px; /* Aumenta el margen entre ítems */
     position: relative;
 }
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 25px; /* Aumenta el relleno de los enlaces */
     display: block;
 }
 /* Hover para los elementos del menú */
@@ -62,7 +62,8 @@ nav ul li a:hover {
     background-color: #aaa;
 }
 .solicitud {
-    margin-left: auto; /* Empuja el elemento a la derecha de forma natural */
+    margin-left: auto; /* Empuja el elemento a la derecha */
+    margin-right: 0; /* Asegura que no haya margen a la derecha */
 }
 /* Submenú (Categorías) */
 .dropdown-menu {
@@ -117,7 +118,7 @@ main {
     max-width: 999px;
     margin: 0 auto;
 }
-h4{
+h4 {
     margin: 3;
     font-size: 17px;
     flex-grow: 5;
@@ -125,14 +126,12 @@ h4{
     color: #353434;
     font-weight: bold;
     font-family: Arial, sans-serif;
-
 }
-h2{
+h2 {
     margin-top: 0px;
     font-size: 25px;
     text-align: center;
     font-family: Arial, sans-serif;
-
 }
 /* Estilos para las categorías */
 .category-grid {
@@ -152,7 +151,7 @@ h2{
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease;
-    color:#353434;
+    color: #353434;
     text-decoration: none;
 }
 .category-item:hover {
@@ -241,16 +240,14 @@ footer img {
         margin: 0;
         padding: 0;
         background-image: url('fondo_movil.webp');
-        background-size: cover;  /* Asegura que la imagen de fondo cubra toda el área */
-        background-position: center;  /* Centra la imagen de fondo */
+        background-size: cover; /* Asegura que la imagen de fondo cubra toda el área */
+        background-position: center; /* Centra la imagen de fondo */
         overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
         display: inline;
-
     }
     .solicitud {
-        margin-left:auto; /* Mueve el enlace 20px a la derecha */
+        margin-left: auto; /* Mueve el enlace a la derecha */
     }
-
     footer img {
         content: url("../footer-mob.webp"); /* Imagen específica para móviles */
         max-height: 100px; /* Ajusta la altura de la imagen en dispositivos móviles */
@@ -264,15 +261,13 @@ footer img {
         bottom: 0;
         width: 100%;
         height: 5rem;
-        position:static;
+        position: static;
         padding-bottom: 5px;
     }
-
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-
     nav ul li {
         width: 100%;
         text-align: center;
@@ -281,7 +276,7 @@ footer img {
     .search-bar {
         margin-top: 1rem;
         display: flex;
-        justify-content:center; /* Mueve el contenido a la derecha */
+        justify-content: center; /* Mueve el contenido a la derecha */
         padding: 25%;
     }
 }
