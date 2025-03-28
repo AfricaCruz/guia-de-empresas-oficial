@@ -95,7 +95,7 @@ nav ul li a:hover {
 .search-bar {
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-end; /* Mueve el contenido a la derecha */
+    justify-content: flex-end;
 }
 .search-bar form {
     display: flex;
@@ -166,7 +166,7 @@ h2 {
     color: #4e99e9;
 }
 .content {
-    flex: 1; /* Hace que el contenido ocupe el espacio disponible antes del footer */
+    flex: 1;
     padding: 20px;
 }
 footer {
@@ -186,8 +186,8 @@ footer p {
     font-family: Arial, sans-serif;
 }
 footer img {
-    height: 50px; /* Mantiene la proporción y evita que se deforme */
-    object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
+    height: 50px;
+    object-fit: cover;
 }
 /* Estilos para cookies */
 .cookie-container {
