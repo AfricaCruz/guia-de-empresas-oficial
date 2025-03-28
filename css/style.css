@@ -40,21 +40,22 @@ form {
 /* Estilos del menú de navegación */
 nav ul {
     list-style-type: none;
-    padding: 0 30px; /* Agrega relleno a los lados para hacerlo más ancho */
+    padding: 0 30px;
     margin: 0;
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
     background-color: white;
-    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a otra línea */
+    flex-wrap: nowrap;
+    min-height: 50px;
 }
 nav ul li {
-    margin: 0 20px; /* Aumenta el margen entre ítems */
+    margin: 0 20px;
     position: relative;
 }
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px 25px; /* Aumenta el relleno de los enlaces */
+    padding: 16px 25px;
     display: block;
 }
 /* Hover para los elementos del menú */
@@ -94,7 +95,7 @@ nav ul li a:hover {
 .search-bar {
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-end; /* Mueve el contenido a la derecha */
+    justify-content: flex-end;
 }
 .search-bar form {
     display: flex;
@@ -165,7 +166,7 @@ h2 {
     color: #4e99e9;
 }
 .content {
-    flex: 1; /* Hace que el contenido ocupe el espacio disponible antes del footer */
+    flex: 1;
     padding: 20px;
 }
 footer {
@@ -185,8 +186,8 @@ footer p {
     font-family: Arial, sans-serif;
 }
 footer img {
-    height: 50px; /* Mantiene la proporción y evita que se deforme */
-    object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
+    height: 50px;
+    object-fit: cover;
 }
 /* Estilos para cookies */
 .cookie-container {
