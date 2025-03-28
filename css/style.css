@@ -149,6 +149,7 @@ footer {
     width: 100%;
     height: 4.5rem;
     grid-row-start: 4;
+    margin-top: 2%;
 }
 footer p {
     font-size: 12px;
