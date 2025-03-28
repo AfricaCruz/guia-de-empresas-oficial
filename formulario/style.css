@@ -94,6 +94,7 @@ button {
 button:hover {
     background: #0056b3;
 }
+
 footer {
     text-align: center;
     background-color: white;
@@ -113,8 +114,8 @@ footer p {
 }
 
 footer img {
-    height: 50px; /* Mantiene la proporción y evita que se deforme */
-    object-fit: cover; /* Recorta la imagen si es necesario en lugar de deformarla */
+    height: 50px;
+    object-fit: cover;
 }
 
 .breadcrumb {
@@ -123,43 +124,49 @@ footer img {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    font-size:18px;
+    font-size: 18px;
     font-family: "Roboto Mono", monospace;
 }
+
 .breadcrumb li {
     margin: 0 5px;
 }
+
 .breadcrumb li a {
     text-decoration: none;
     color: #2563eb;
-    font-size:18px;
+    font-size: 18px;
 }
+
 .breadcrumb li:not(:last-child)::after {
     content: ">";
     margin-left: 5px;
     color: #333;
 }
+
 .button-container {
     text-align: center;
-    margin: 30px 0;
+    margin: 20px;
 }
+
 .back-button {
-    background: #007acc;
+    background: #007BFF;
     color: #fff;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    min-width: 150px; /* Asegura un ancho mínimo para el botón */
+    display: inline-block; /* Asegura que el botón se ajuste al contenido */
 }
+
 .back-button:hover {
     background: #0056b3;
-  
 }
 
-
-   
 @media (max-width: 480px) {
     body {
         font-family: 'Poppins', sans-serif;
@@ -244,7 +251,7 @@ footer img {
     }
 
     button {
-        padding: 10px 12px;
+        padding: 12px;
         background: #007bff;
         color: #fff;
         border: none;
@@ -283,24 +290,13 @@ footer img {
         content: url("../footer-mob.webp");
         max-height: 100px;
         width: 100%;
-        height: auto; /* Ajustado para pantallas pequeñas */
+        height: auto;
         object-fit: contain;
     }
-button {
-    padding: 12px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-    transition: background 0.3s;
-    width: 95%;
-    text-align: center;
-}
 
-button:hover {
-    background: #0056b3;
-}
+    .back-button {
+        min-width: 120px; /* Ajuste para pantallas pequeñas */
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
