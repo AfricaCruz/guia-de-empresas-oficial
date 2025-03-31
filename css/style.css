@@ -161,6 +161,10 @@ footer p {
 footer img {
     height: 50px;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .cookie-container {
     position: fixed;
@@ -250,6 +254,9 @@ footer img {
         width: 100%;
         height: auto;
         object-fit: contain;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
     }
     footer {
         text-align: center;
