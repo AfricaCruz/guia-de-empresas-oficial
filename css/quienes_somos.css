@@ -122,11 +122,9 @@ footer img {
     footer img {
         content: url("../footer-mob.webp");
         width: 100%; /* Expande la imagen a todo el ancho del footer */
-        height: 100%; /* Hace que la imagen ocupe todo el alto del footer */
         object-fit: cover; /* Estira la imagen para cubrir todo el contenedor */
         background-color: white; /* Asegura que el fondo de la imagen sea blanco */
         border: none; /* Asegura que no haya bordes */
-        max-width: 100%;
     }
 
     footer {
