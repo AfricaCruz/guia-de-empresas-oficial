@@ -101,7 +101,6 @@ footer p {
     font-family: Arial, sans-serif;
 }
 footer img {
-    height: 50px;
     object-fit: cover;
 }
 @media screen and (max-width: 480px) {
