@@ -130,4 +130,10 @@ footer img {
         position: static;
         padding-bottom: 5px;
     }
+    img {
+        width: 80%;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 }
