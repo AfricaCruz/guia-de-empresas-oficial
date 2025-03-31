@@ -142,7 +142,7 @@ footer img {
         width: 80%;
         margin: 15px auto;
         display: block;
-        border-radius: 8px;
+       
         box-shadow: none; /* Asegura que no haya sombras en las imágenes */
     }
 }
