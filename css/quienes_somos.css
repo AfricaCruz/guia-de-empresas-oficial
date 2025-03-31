@@ -71,7 +71,7 @@ img {
 }
 .back-to-top {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .button {
     padding: 10px 20px;
@@ -130,6 +130,7 @@ footer img {
         position: static;
         box-shadow: none; /* Asegura que no haya sombras en el footer */
         padding-bottom: 8px;
+        margin-top: 15%;
     }
     img {
         width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
