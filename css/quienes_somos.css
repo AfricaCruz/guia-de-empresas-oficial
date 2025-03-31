@@ -71,26 +71,24 @@ img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .back-to-top {
-    text-align: center; /* Centra el botón */
-    margin-top: 20px; /* Espacio desde el contenido */
+    text-align: center;
+    margin-top: 20px;
 }
 .button {
     padding: 10px 20px;
-    background-color: #007BFF; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    text-decoration: none; /* Elimina el subrayado */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     font-size: 16px;
-    transition: background-color 0.3s; /* Efecto de transición */
+    transition: background-color 0.3s;
 }
 footer {
     text-align: center;
     background-color: white;
-    position: static;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: 4.5rem;
-    grid-row-start: 4;
+    padding: 15px 0;
     margin-top: 2%;
 }
 footer p {
@@ -101,8 +99,18 @@ footer p {
     font-family: Arial, sans-serif;
 }
 footer img {
+<<<<<<< HEAD
     object-fit: cover;
+=======
+    height: auto;
+    max-height: 50px;
+    max-width: 90%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+>>>>>>> 55748c02a8607f577a51ec50e4a0e9b669acdef7
 }
+
 @media screen and (max-width: 480px) {
     section {
     background: #ffffff;
