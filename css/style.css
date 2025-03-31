@@ -283,6 +283,7 @@ footer img {
         background-repeat: no-repeat;
         overflow: hidden;
     }
+    
     body {
         margin: 0;
         padding: 0;
@@ -290,35 +291,41 @@ footer img {
         background-size: cover;
         background-position: center;
         overflow-x: hidden;
-        display: inline;
+        display: flex; /* Cambié inline por flex para mejor control en desktop */
     }
+    
     .solicitud {
         margin-left: auto;
     }
+    
     footer img {
         content: url("../footer-mob.webp");
-        max-height: 100px;
+        max-height: 150px; /* Aumenté el tamaño para mejor visibilidad en 1200px */
         width: 100%;
         height: auto;
         object-fit: contain;
     }
+    
     footer {
         text-align: center;
         background-color: white;
         bottom: 0;
         width: 100%;
-        height: 5rem;
+        height: 6rem; /* Aumenté ligeramente la altura */
         position: static;
-        padding-bottom: 5px;
+        padding-bottom: 10px; /* Aumenté el padding */
     }
+    
     nav ul {
         z-index: 1;
-        flex-direction: column;
+        flex-direction: row; /* Mantengo row en lugar de column para 1200px */
         align-items: center;
+        justify-content: space-around; /* Añadí para mejor distribución */
     }
+    
     nav ul li {
-        width: 100%;
+        width: auto; /* Cambié de 100% a auto para mejor ajuste */
         text-align: center;
-        padding: 10px 0;
+        padding: 15px 20px; /* Ajusté el padding para más espacio */
     }
 }
