@@ -116,6 +116,7 @@ footer p {
 footer img {
     height: 50px;
     object-fit: cover;
+    padding: 3px 0;
 }
 
 .breadcrumb {
