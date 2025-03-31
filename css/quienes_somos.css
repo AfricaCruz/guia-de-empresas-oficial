@@ -98,6 +98,7 @@ footer p {
     margin: 0;
     color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
+    font-style: normal;
 }
 footer img {
     object-fit: cover;
