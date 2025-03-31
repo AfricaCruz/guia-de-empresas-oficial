@@ -63,7 +63,7 @@ li {
     background: #bbdefb;
 }
 img {
-    width: 80%;
+    width: 50%;
     max-width: 300px;
     display: block;
     margin: 15px auto;
@@ -88,7 +88,7 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;
-    height: 4.5rem;
+    height: 4.8rem;
     grid-row-start: 4;
     margin-top: 5%;
 }
