@@ -118,6 +118,7 @@ footer img {
         object-fit: cover; /* Estira la imagen para cubrir todo el contenedor */
         background-color: white; /* Asegura que el fondo de la imagen sea blanco */
         border: none; /* Asegura que no haya bordes */
+        max-width: 400%;
     }
 
     footer {
