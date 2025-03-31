@@ -126,7 +126,7 @@ footer img {
         background-color: white; /* Fondo blanco para el footer */
         bottom: 0;
         width: 100%;
-        height: 5.4rem; /* Altura del footer */
+        height: 6rem; /* Altura del footer */
         position: static;
         box-shadow: none; /* Asegura que no haya sombras en el footer */
         padding-bottom: 8px;
