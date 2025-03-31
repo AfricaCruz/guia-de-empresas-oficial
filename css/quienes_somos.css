@@ -103,10 +103,7 @@ footer p {
 footer img {
     height: 50px;
     object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    
 }
 @media screen and (max-width: 480px) {
     section {
