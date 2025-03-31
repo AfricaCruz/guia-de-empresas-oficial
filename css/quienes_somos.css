@@ -120,14 +120,6 @@ footer img {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease-in-out;
     }
-    footer img {
-        content: url("../footer-mob.webp");
-        max-height: 100px;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        background-color: white; /* Asegura que el fondo de la imagen sea blanco */
-    }
     footer {
         text-align: center;
         background-color: white; /* Fondo blanco para el footer */
@@ -136,8 +128,21 @@ footer img {
         height: 5rem;
         position: static;
         padding-bottom: 5px;
-        box-shadow: none; /* Asegura que no haya sombras en el footer */
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    footer img {
+        content: url("../footer-mob.webp");
+        width: 100%; /* Hace que la imagen ocupe todo el ancho del footer */
+        height: 100%; /* Hace que la imagen ocupe todo el alto del footer */
+        object-fit: cover; /* Hace que la imagen se estire y cubra todo el contenedor */
+        background-color: white; /* Fondo blanco detrás de la imagen */
+        border-radius: 0; /* Elimina bordes redondeados si los hay */
+    }
+
     img {
         width: 80%;
         margin: 15px auto;
