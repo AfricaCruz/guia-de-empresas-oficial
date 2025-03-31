@@ -99,16 +99,13 @@ footer p {
     font-family: Arial, sans-serif;
 }
 footer img {
-<<<<<<< HEAD
     object-fit: cover;
-=======
     height: auto;
     max-height: 50px;
     max-width: 90%;
     object-fit: contain;
     display: block;
     margin: 0 auto;
->>>>>>> 55748c02a8607f577a51ec50e4a0e9b669acdef7
 }
 
 @media screen and (max-width: 480px) {
