@@ -163,64 +163,6 @@ footer img {
     height: 50px;
     object-fit: cover;
 }
-.cookie-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #333;
-    color: white;
-    padding: 15px;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-}
-.cookie-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.cookie-btn {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.accept {
-    background-color: #4CAF50;
-    color: white;
-}
-.reject {
-    background-color: #d9534f;
-    color: white;
-}
-.cookie-policy {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.cookie-policy header {
-    background-color: #0065a0;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-}
-.cookie-policy footer {
-    background-color: #0065a0;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
-}
-#cookie-banner {
-    display: none; /* Ocultar el banner por defecto */
-}
 @media screen and (max-width: 480px) {
     header {
         position: relative;
