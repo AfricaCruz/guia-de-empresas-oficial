@@ -36,7 +36,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                        //Set email format to HTML
-    $mail->Subject = $nombre;
+    $mail->Subject = "Nombre: " . $nombre;
     $mail->Body = "CIF: " . $cif . "<br>Teléfono: " . $telefono . "<br>Email: " . $email . "<br>Mensaje: " . $mensaje;
 
     $mail->send();
